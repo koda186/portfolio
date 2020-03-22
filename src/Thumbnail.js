@@ -2,6 +2,7 @@
 import React from 'react';
 //Import the Link Component
 import {Link} from 'react-router-dom';
+import Image from 'react-bootstrap/Image'
 
 //thumbnail component
 //****link each slot with its corresponding attributes,
@@ -9,13 +10,11 @@ import {Link} from 'react-router-dom';
 function Thumbnail(props){
     return(
         <div className = "project">
+
             <Link to = {props.link}>
                 <div className = "project-image">
-                    <img src = {props.image} alt="Project Image"/>
+                    <Image src = {props.image} alt="Project" style={{padding: "1px" , width: "100%"}} rounded />
                 </div>
-
-                <div className = "project-title">{props.title}</div>
-                <div className = "project-category">{props.category}</div>
             </Link>
         </div>
     );

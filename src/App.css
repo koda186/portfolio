@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: rgb(88, 91, 248);
+  padding-top: 5%;
 }
 
 .App-logo {
@@ -13,6 +19,7 @@
   }
 }
 
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +30,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+*/
 
 .App-link {
   color: #61dafb;
@@ -36,3 +44,57 @@
     transform: rotate(360deg);
   }
 }
+
+nav{
+  background-color: white;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 4px;
+  padding-left: 10px;
+  text-align: justify;
+
+}
+
+.Thumbnails{
+  background-color: white;
+}
+
+.link {
+  color: #000;
+  color-adjust: bold;
+}
+.link:hover {
+   color: #00F
+}
+.linkedIn{
+  height: 5%;
+  width: 15%;
+  align-content: flex-start;
+}
+.container{
+  background-color: white;
+  padding: 1%;
+  border-radius: 25px;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 1%;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flex-container{
+  border-radius: 25px;
+  background-color: white;
+  padding: 5%;
+  margin: 5%;
+}
+
+
