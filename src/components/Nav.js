@@ -21,10 +21,9 @@ function Nav() {
   return (
     <nav>
       <Row>
-      <Col xs={3} md={6}>
-        <a href="http://linkedin.com/in/robert-allen-jr-11183382">
-        <img Image src= "https://img.icons8.com/ios/75/000000/linkedin.png" align = "left"  width="50px"
-        height="50px" className="d-inline-block align-top" display= "flex" padding-left= "20px" alt= "100x100 "/>
+        <Col xs={3} md={6}>
+          <a href="http://linkedin.com/in/robert-allen-jr-11183382">
+          <img src= "https://img.icons8.com/ios/75/000000/linkedin.png" align = "left"  width="50px" height="50px" className="d-inline-block align-top" display= "flex" padding-left= "20px" alt= "50x50 "/>
         </a>
         </Col>
         <Col xs={3} md={2}>

@@ -12,12 +12,11 @@ function Thumbnail(props){
         <div className = "project">
 
             <Link to = {props.link}>
-                <div className = "project-image">
-                    <Image src = {props.image} alt="Project" style={{padding: "1px" , width: "100%"}} rounded />
-                </div>
+                    <Image src = {props.image}  rounded fluid/>
             </Link>
         </div>
     );
 }
+
 
 export default Thumbnail;

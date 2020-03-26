@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 //import linkedIn from './images/linkedIn.png'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Nav from './components/Nav.js';
+import Sidebar from './components/Sidebar.js';
 import Projects from './Projects';
 import Articles from './Articles.js';
 import About from './About.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Introduction from './components/Introduction';
 
 
 // The react-router-dom library provides a component called 
@@ -24,16 +26,23 @@ function App() {
         <div className="container">
           <Nav />
         </div>
-        <div className="container">
+        <div>
+        <div className="page">
+        <Sidebar />
+        </div>
+        <div id="colorlib-page">
+          <div id="container-wrap">
+        <section className="main" data-section="main">
+          <Introduction />
             <Switch>
                 <Route exact path = "/" component = {Projects} />
                 <Route path = "/articles" component = {Articles}/>
                 <Route path = "/about" component = {About} />
             </Switch>
+        </section>
         </div>
         </div>
-        <div className = "Resources">
-          <img src = {logo} className = "logo" alt = "Logo" />
+        </div>
         </div>
       </div>
 
