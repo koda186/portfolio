@@ -2,8 +2,8 @@ import React from 'react';
 
 function Introduction() {
     return (
-      <intro>
-      <div>
+      <introduction>
+        <div>
         <section id="colorlib-hero" className="js-fullheight" data-section="home">
           <div className="flexslider js-fullheight">
                 <div className="overlay" />
@@ -14,8 +14,8 @@ function Introduction() {
                 </section>
           </div>
         </section>
-      </div>
-      </intro>
+        </div>
+      </introduction>
     );
   }
 export default Introduction;

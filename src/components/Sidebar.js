@@ -1,6 +1,6 @@
 import React from 'react';
 //import {Link} from 'react-router-dom';
-import authorImage from '../images/authorImage.jpg'
+//import authorImage from '../images/authorImage.jpg'
 
 function Sidebar() {
     
