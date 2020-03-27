@@ -114,17 +114,19 @@ nav{
 
 #aside {
 border-radius: 25px;
+padding: 2%;
 }
 @media screen and (max-width: 558px) {
   #aside {
 
-    width: 80%;
+    width: 100%;
     -moz-transform: translateX(-00px);
     -webkit-transform: translateX(-00px);
     -ms-transform: translateX(-00px);
     -o-transform: translateX(-00px);
     transform: translateX(-0px);
     padding-top: 4em;
+    float: center;
   }
 } 
 
@@ -195,13 +197,14 @@ border-radius: 25px;
 ul {
   overflow: auto;
   position: center;
+  background-color: blueviolet;
 }
 
 ul li {
 	list-style-type: none;
-  float: left;
-  padding: 1%;
-  margin-left: 20%;
+  padding-left: 4%;
+  margin-bottom: 30px;
+  float:left;
 }
 
 ul li a i {
@@ -226,14 +229,14 @@ ul li a i {
   #icons
   ul {
   overflow: auto;
-  position: center;
-  margin: 0 0 2em 0;
+
+
   text-align: center;
   }
   ul li {
 	list-style-type: none;
-  float: left;
-  margin: 0 0 0px 0;
+  float: center;
+
       padding: 3%;
       list-style: none;
       letter-spacing: 1px; 
@@ -247,7 +250,7 @@ ul li a i {
 	border-radius: 20px;
 	font-size: 25px;
 	text-align: center;
-	margin-right: 15px;
+
   padding-top: 15%;
         text-decoration: none;
         position: relative;
