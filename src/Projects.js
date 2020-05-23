@@ -7,6 +7,8 @@ import SeniorProject from './images/SeniorProject.png'
 import SystemDiagram from './images/SystemDiagram.png'
 import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
+import {image} from 'react-bootstrap';
 //import Container from 'react-bootstrap/Container'
 //import Image from 'react-bootstrap/Image'
 import './App.css';
@@ -17,41 +19,44 @@ function Projects(props) {
   return (
     // Render the Thumbnail component
     <section className="projects" data-section="projects">
-      <Row>
-      <Col xs={12} md={6}>
-        <Thumbnail
-        link = "/"
-        image= {raspberryPi} alt= "100x100 "
-        />
-      </Col>
-      
-      <Col xs={12} md={6}>
-        <Thumbnail
-        link = "/"
-        image= {arduino} alt= "100x100 "
-        />
-      </Col>
+      <Container>
 
-      </Row>
-    
-      <Row>
-      <Col xs={12} md={6}>
-        <Thumbnail
-        link="/articles"
-        image= {SeniorProject} alt= "100x100 "
-        />
-      </Col>
+        {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+        <Row>
+          <Col xs={12} md={6}>
+            <Thumbnail
+            link = "/"
+            image= {raspberryPi} alt= "100x100 "
+            />
+          </Col>
+          <Col xs={12} md={6}>
+            <Thumbnail
+            link = "/"
+            image= {arduino} alt= "100x100 " 
+            />
+          </Col>
+        </Row>
 
-      <Col xs={12} md={6}>
-        <Thumbnail
-        link="/"
-        image= {SystemDiagram} alt= "100x100 "
-        />
-      </Col>
+        <Row>
+          <Col xs={12} md={6}>
+            <Thumbnail
+            link = "/"
+            image= {SeniorProject} alt= "100x100 "
+            />
+          </Col>
+          <Col xs={12} md={6}>
+            <Thumbnail
+            link = "/"
+            image= {SystemDiagram} alt= "100x100 "
+            />
+          </Col>
+        </Row>
 
-      </Row>
 
-    </section>
+      </Container>
+
+  </section>
+  
   );
 }
  

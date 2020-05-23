@@ -12,7 +12,7 @@ function Thumbnail(props){
         <div className = "project">
 
             <Link to = {props.link}>
-                    <Image src = {props.image}  rounded fluid/>
+                    <Image src = {props.image} width = "350" height = "350" crop = "fill" gravity = "center"  rounded/>
             </Link>
         </div>
     );

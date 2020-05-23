@@ -183,9 +183,10 @@ padding: 2%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; 
-  background-color: whitesmoke;
+  background-color: rgb(88, 91, 248);
+  /*background-color: whitesmoke;*/
   border-radius: 25px;
-  float: center;
+  /*float: center;*/
   position: relative;
   overflow-y: auto;
   z-index: 9999;
