@@ -176,15 +176,15 @@ padding: 2%;
 
 }
 
-.projects {
+.project {
   /*width: calc(50% - 100px);*/
   width: calc(100%);
   fill-opacity: initial;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; 
-  background-color: rgb(88, 91, 248);
-  /*background-color: whitesmoke;*/
+  /*background-color: rgb(88, 91, 248);*/
+  background-color: whitesmoke;
   border-radius: 25px;
   /*float: center;*/
   position: relative;

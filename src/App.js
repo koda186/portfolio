@@ -27,9 +27,7 @@ function App() {
           <Nav />
         </div>
         <div>
-        <div className="page">
-        <Sidebar />
-        </div>
+
         <div id="colorlib-page">
           <div id="container-wrap">
         <section className="main" data-section="main">
