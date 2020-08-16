@@ -21,31 +21,33 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <div className="flex-container">
+        <div className="flex-container">
+          
+          <div className="container">
+              <Nav />
+          </div>
 
-        <div className="container">
-          <Nav />
+          <div className="page">
+            <Sidebar />
+          </div>
+
+                  
+            <div id="colorlib-page">
+              <div id="container-wrap">
+                <section className="main" data-section="main">
+                  <Introduction />
+                    <Switch>
+                      <Route exact path = "/" component = {Projects} />
+                      <Route path = "/articles" component = {Articles}/>
+                      <Route path = "/about" component = {About} />
+                    </Switch>
+                </section>
+              </div>
+            </div>
+
         </div>
-        <div>
-        <div className="page">
-        <Sidebar />
-        </div>
-        <div id="colorlib-page">
-          <div id="container-wrap">
-        <section className="main" data-section="main">
-          <Introduction />
-            <Switch>
-                <Route exact path = "/" component = {Projects} />
-                <Route path = "/articles" component = {Articles}/>
-                <Route path = "/about" component = {About} />
-            </Switch>
-        </section>
-        </div>
-        </div>
-        </div>
-        </div>
+
       </div>
-
     </Router>
   );
 }
