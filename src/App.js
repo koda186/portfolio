@@ -10,6 +10,7 @@ import About from './About.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Introduction from './components/Introduction';
+import FadeExample from './components/FadeExample';
 
 
 // The react-router-dom library provides a component called 
@@ -20,30 +21,37 @@ import Introduction from './components/Introduction';
 function App() {
   return (
     <Router>
+      {/* 
+      <div className="page">
+          <Sidebar />
+          <FadeExample />
+
+      </div>
+    */}
+      
       <div className="App">
-      <div className="flex-container">
+ 
+        <div className="flex-container">
+          
+          <div className="container">
+            <Nav />
+          </div>
+        
+          <div id="colorlib-page">
+            <div id="container-wrap">
+              <section className="main" data-section="main">
+                <Introduction />
+                  <Switch>
+                    <Route exact path = "/" component = {Projects} />
+                    <Route path = "/articles" component = {Articles}/>
+                    <Route path = "/about" component = {About} />
+                  </Switch>
+              </section>
+            </div>
+          </div>
 
-        <div className="container">
-          <Nav />
-        </div>
-        <div>
-
-        <div id="colorlib-page">
-          <div id="container-wrap">
-        <section className="main" data-section="main">
-          <Introduction />
-            <Switch>
-                <Route exact path = "/" component = {Projects} />
-                <Route path = "/articles" component = {Articles}/>
-                <Route path = "/about" component = {About} />
-            </Switch>
-        </section>
-        </div>
-        </div>
-        </div>
         </div>
       </div>
-
     </Router>
   );
 }

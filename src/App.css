@@ -64,9 +64,10 @@ nav{
 }
 
 .page{
-  padding: 1%;
+  padding: 5%;
+  margin: 2%;
   border-radius: 25px;
-  width: 80%;
+  width: 100%;
   position: fixed;
   overflow-y: auto;
   z-index: 1;
