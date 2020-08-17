@@ -32,19 +32,19 @@ function Nav() {
           </Col>
         
           <Col xs={3} md={2}>
-            <Link to = "/" style={{ textDecoration: 'none', fontWeight: "bold", align: "right" }} className = "link"> 
+            <Link to = "/" style={{ textDecoration: 'none', fontWeight: "bold", align: "left" }} className = "link"> 
               <li> Projects </li>
             </Link>
           </Col>
 
           <Col xs={3} md={2}>
-            <Link to= "/articles" style={{ textDecoration: 'none', fontWeight: "bold", align: "right" }} className = "link">
+            <Link to= "/articles" style={{ textDecoration: 'none', fontWeight: "bold", align: "left" }} className = "link">
               <li> Articles </li>
             </Link>
           </Col>
 
           <Col xs={3} md={2}>
-            <Link to = "/about" style={{ textDecoration: 'none', fontWeight: "bold", align: "right" }} className = "link">
+            <Link to = "/about" style={{ textDecoration: 'none', fontWeight: "bold", align: "left" }} className = "link">
               <li> About</li>
             </Link>
           </Col>
