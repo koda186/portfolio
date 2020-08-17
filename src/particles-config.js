@@ -10,7 +10,7 @@ export default {
       }
     },
     color: {
-      value: '#ffffff'
+      value: '#FFFFFF'
     },
     shape: {
       type: 'circle',
@@ -30,7 +30,7 @@ export default {
       }
     },
     size: {
-      value: 3,
+      value: 4,
       random: true,
       anim: {
         enable: false,
@@ -49,7 +49,7 @@ export default {
     move: {
       enable: true,
       speed: 10,
-      direction: 'left',
+      direction: 'none',
       random: true,
       straight: true,
       out_mode: 'out',
@@ -65,12 +65,12 @@ export default {
     detect_on: 'canvas',
     events: {
       onhover: {
-        enable: false,
-        mode: 'grab'
+        enable: true,
+        mode: 'repulse'
       },
       onclick: {
         enable: true,
-        mode: 'repulse'
+        mode: 'push'
       },
       resize: true
     },

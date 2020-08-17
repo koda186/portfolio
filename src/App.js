@@ -71,8 +71,10 @@ function App() {
 
     <div className="main">
       <Particles>
+
  
                   <div className="App">
+
                     <div className="flex-container">
           
                         <div className="container">
@@ -81,7 +83,7 @@ function App() {
         
                         <div id="colorlib-page">
                           <div id="container-wrap">
-                            <section className="items" data-section="main">
+                            <section className="items" data-section="items">
                                 <Switch>
                                   <Route exact path = "/" component = {Projects} />
                                   <Route path = "/articles" component = {Articles}/>
