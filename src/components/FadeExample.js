@@ -7,7 +7,6 @@ export default class ReactReveal extends Component {
 	render() {
 		return(
 			<Fragment>
-			<div className="flex-container">
 				{animateList.map((item,key) => (
 					<div style = {styles.block} key={key}>
 						<Fade top>
@@ -15,7 +14,6 @@ export default class ReactReveal extends Component {
 						</Fade>
 					</div>
 				))}
-			</div>
 			</Fragment>
 		);
 	}

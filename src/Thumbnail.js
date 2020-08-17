@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image'
 //by filling them in with props.attribute-name***
 function Thumbnail(props){
     return(
-        <div className = "project">
+        <div className = "image">
 
             <Link to = {props.link}>
                     <Image src = {props.image} width = "450" height = "250" crop = "fill" gravity = "center"  rounded/>

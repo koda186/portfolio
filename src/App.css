@@ -2,8 +2,8 @@
 .App {
   text-align: center;
   background-color: rgb(88, 91, 248);
-  padding-top: 5%;
-  padding-bottom:3%;
+  padding-top: 15%;
+  padding-bottom:20%;
 
 }
 
@@ -86,9 +86,11 @@ nav{
     -ms-transform: translateX(00px);
     -o-transform: translateX(00px);
     transform: translateX(-00px);
-    padding-top: 4em;
+    /*padding-top: 4em;*/
     overflow-y: scroll;
     z-index: 1;
+    padding-top: 15%;
+    padding-bottom:20%;
   }
 } 
 
@@ -108,25 +110,85 @@ nav{
 .flex-container{
   border-radius: 25px;
   background-color: white;
-  padding: 5%;
+  padding: 10%;
   margin: 5%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 2; /*9999;*/
 
 }
 
+.image {
+  display: block;
+  margin: 0 auto;
+    /*width: calc(50% - 100px);*/
+  width: calc(100%);
+  fill-opacity: initial;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; 
+  /*background-color: rgb(88, 91, 248);*/
+
+  border-radius: 25px;
+  /*float: center;*/
+  position: relative;
+  overflow-y: auto;
+  z-index: 9999; /*9999;*/
+}
+.image:focus, .image:hover {
+  animation: wobble 1s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.sidebar{
+  padding: 5%;
+  border-radius: 25px;
+  width: 100%;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 2;
+  background-color: rgb(88, 91, 248);
+}
+
 #aside {
-border-radius: 25px;
-padding: 2%;
+border-top-right-radius:  25px;
+border-top-left-radius: 25px;
+border-bottom-right-radius:  25px;
+border-bottom-left-radius: 25px;
+margin-top: 0%;
+margin-bottom: 4%;
+padding-top: 10.5%;
+padding-bottom: 10%;
+
 }
 @media screen and (max-width: 558px) {
   #aside {
 
     width: 100%;
-    -moz-transform: translateX(-00px);
+    -moz-transform: translateX(-0px);
     -webkit-transform: translateX(-00px);
     -ms-transform: translateX(-00px);
     -o-transform: translateX(-00px);
     transform: translateX(-0px);
-    padding-top: 4em;
+    padding-top: 5%;
+    padding-bottom: 30%;
+    margin-top: 10%;
+    margin-bottom: 20%;
     float: center;
   }
 } 
@@ -190,7 +252,7 @@ padding: 2%;
   /*float: center;*/
   position: relative;
   overflow-y: auto;
-  z-index: 9999;
+  z-index: 9999; /*9999;*/
 
 }
 
@@ -231,9 +293,10 @@ ul li a i {
   #icons
   ul {
   overflow: auto;
+  float: left;
 
 
-  text-align: center;
+  text-align: left;
   }
   ul li {
 	list-style-type: none;
