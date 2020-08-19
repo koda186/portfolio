@@ -21,14 +21,14 @@ function Nav() {
   return (
     <nav>
       <Row>
-          <Col xs={3} md={6}>
-            <nav id="icons">
+          <Col xs={12} md={6}>
+            <div className="icons">
               <ul>
                 <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook"/></a></li>
                 <li><a href="https://linkedin.com/in/robert-allen-jr-11183382" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"/></a></li>
                 <li><a href="https://bitbucket.org/rallen186NMR/workspace/projects/" target="_blank" rel="noopener noreferrer"><i className="fa fa-bitbucket"/></a></li>
               </ul>
-            </nav>
+            </div>
           </Col>
           
           <Col xs={3} md={2}>
