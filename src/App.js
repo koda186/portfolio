@@ -3,14 +3,17 @@
 //import linkedIn from './images/linkedIn.png'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Nav from './components/Nav.js';
+import Home from "./components/Home"
 import Sidebar from './components/Sidebar.js';
 import Projects from './Projects';
 import Articles from './Articles.js';
 import About from './About.js';
+import Arduino from './Arduino.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Introduction from './components/Introduction';
 import FadeExample from './components/FadeExample';
+
 
 import React, { useState, useRef } from 'react';
 //import ReactDOM from 'react-dom';
@@ -28,87 +31,50 @@ import './styles.scss';
 function App() {
   return (
     <Router>
-      {/* 
-      <div className="page">
-          <Sidebar />
-          <FadeExample />
 
-      </div>
-    */}
+      <div className="main">
+        <Particles>
+          <div className="App">
 
-      {/* 
-      <div className="sidebar">
-        <Sidebar />
-      </div>
-      
-      <div className="App">
- 
-        <div className="flex-container">
-          
-          <div className="container">
-            <Nav />
-          </div>
-        
-          <div id="colorlib-page">
-            <div id="container-wrap">
-              <section className="main" data-section="main">
-                  <Switch>
-                    <Route exact path = "/" component = {Projects} />
-                    <Route path = "/articles" component = {Articles}/>
-                    <Route path = "/about" component = {About} />
-                  </Switch>
-              </section>
+            <div className="flex-container">
+  
+              <div className="page-container">
+                <Nav />
+              </div>
+
+              <div id="page"> 
+                <div id="container-wrap">
+                  <section className="items" data-section="items">
+                      {/*<Switch>*/}
+                      
+                        <Route exact path = "/" component = {Projects} />
+                        <Route path = "/articles" component = {Articles}/>
+                        <Route path = "/about" component = {About} />
+                        <Route path = "/arduino" component = {Arduino} />
+                      {/*<Switch>*/}
+                      
+                      {/* <Route exact path='/' component={Home} /> 
+
+                        <Route exact path = "/" component = {Projects} />
+                        <Route path = "/articles" component = {Articles}/>
+                        <Route path = "/about" component = {About} />
+                        <Route path = "/arduino" component = {Arduino} /> 
+                      */}
+
+                  </section>
+
+                </div>
+                
+                <Introduction />
+              </div>
+            </div> 
+            <div className="education">
+            <Route exact path = "/" component = {Home} />
             </div>
-              <Introduction />
-          </div>
+          </div> ///app
 
-        </div>
-
-      </div>
-      */}
-
-
-
-    <div className="main">
-      <Particles>
-
- 
-                  <div className="App">
-
-                    <div className="flex-container">
-          
-                        <div className="container">
-                          <Nav />
-                        </div>
-        
-                        <div id="colorlib-page">
-                          <div id="container-wrap">
-                            <section className="items" data-section="items">
-                                <Switch>
-                                  <Route exact path = "/" component = {Projects} />
-                                  <Route path = "/articles" component = {Articles}/>
-                                  <Route path = "/about" component = {About} />
-                                </Switch>
-                            </section>
-                          </div>
-                            <Introduction />
-                        </div>
-                    </div>
-                  </div>
-         
-      </Particles>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+        </Particles>
+      </div> //main
 
     </Router>
   );

@@ -8,7 +8,7 @@ import SystemDiagram from './images/SystemDiagram.png'
 import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
-import {image} from 'react-bootstrap';
+
 //import Container from 'react-bootstrap/Container'
 //import Image from 'react-bootstrap/Image'
 import './App.css';
@@ -31,7 +31,7 @@ function Projects(props) {
           </Col>
           <Col xs={12} md={6}>
             <Thumbnail
-            link = "/"
+            link = "/arduino"
             image= {arduino} alt= "100x100 " 
             />
           </Col>

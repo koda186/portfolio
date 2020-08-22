@@ -4,8 +4,8 @@
 
 .App {
   text-align: center;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-right: 3%;
   padding-left: 3%;
 
@@ -175,10 +175,18 @@ background-color: rgb(88, 91, 248);
   }
 } 
 
-.container{
+.page-container{
   background-color: white;
   padding: 1%;
   border-radius: 25px;
+}
+
+.education{
+  border-radius: 25px;
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 5%;
 }
 
 .column{
@@ -195,14 +203,25 @@ background-color: rgb(88, 91, 248);
 }
 
 .flex-container{
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: white;
-  padding: 10%;
+  padding: 5%;
   margin: 5%;
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
 }
+
+.center-body{
+  border-radius: 25px;
+  background-color: white;
+  padding: 5%;
+  margin: 5%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+}
+
 
 .image {
   display: block;
@@ -303,7 +322,7 @@ ul li a i {
 
 .btn{
   width: 30%;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000;
