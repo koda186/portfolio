@@ -1,17 +1,12 @@
-.education {
+.education-container {
  /*background-color: rgb(88, 91, 248);*/
  background-color: white;
-}
-
-.grad-center {
-  background-color: white;
-  font-size: 5rem;
-  color: black;
+ border-radius: 15px;
+  /*background-color: white;*/
   position: relative;
   overflow-y: auto;
-  z-index: 1; /*9999;*/
+  z-index: 3; /*9999;*/
 }
-
 
 
 td {

@@ -12,15 +12,13 @@ class MyEducation extends React.Component {
   render() {
     if (this.props.isMobile()) {
       return (
-
-          <div className = "education">
-
+          <div className = "education-container">
             <Container>
 
               <h3>School</h3>
               <b>Name:</b> St. Edward's University <br />
               <b>Degree:</b> Bachelor of Science - BS <br />
-              <b>Field of Study:</b> Computer Science <br />
+              <b>Major:</b> Computer Science <br />
 
               <h3>Lang's</h3>
               Assembly Language
@@ -89,7 +87,7 @@ class MyEducation extends React.Component {
       );
     } else {
       return (
-          <div className = "education">
+          <div className = "education-container">
             <Container>
               <Row>
                 <Col>

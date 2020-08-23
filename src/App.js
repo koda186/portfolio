@@ -1,11 +1,13 @@
 //import React from 'react';
+import React, { useState, useRef } from 'react';
 //import logo from './logo.svg';
 //import linkedIn from './images/linkedIn.png'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Nav from './components/Nav.js';
+//import Nav from './components/Nav.js';
+import MyNav from "./components/NavBar"
 import Home from "./components/Home"
 import Sidebar from './components/Sidebar.js';
-import Projects from './Projects';
+import Projects from "./components/Project";
 import Articles from './Articles.js';
 import About from './About.js';
 import Arduino from './Arduino.js';
@@ -15,7 +17,7 @@ import Introduction from './components/Introduction';
 import FadeExample from './components/FadeExample';
 
 
-import React, { useState, useRef } from 'react';
+
 //import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 import ReactParticles from 'react-particles-js';
@@ -31,52 +33,27 @@ import './styles.scss';
 function App() {
   return (
     <Router>
-
       <div className="main">
         <Particles>
-          <div className="App">
+      <div className='App'>
+        <MyNav />
+        
+        <Route exact path='/' component={Home} />
+        <Route path = "/projects" component = {Projects} />
+        <Route path = "/articles" component = {Articles}/>
+        <Route path = "/about" component = {About} />
+        <Route path = "/arduino" component = {Arduino} />
 
-            <div className="flex-container">
-  
-              <div className="page-container">
-                <Nav />
-              </div>
+        
+        {/*<Route path='/experience' component={MyExperience} />
+        <Route path='/projects' component={MyProjects} />
+        <Route path='/🥼' component={MyLab} />*/}
 
-              <div id="page"> 
-                <div id="container-wrap">
-                  <section className="items" data-section="items">
-                      {/*<Switch>*/}
-                      
-                        <Route exact path = "/" component = {Projects} />
-                        <Route path = "/articles" component = {Articles}/>
-                        <Route path = "/about" component = {About} />
-                        <Route path = "/arduino" component = {Arduino} />
-                      {/*<Switch>*/}
-                      
-                      {/* <Route exact path='/' component={Home} /> 
-
-                        <Route exact path = "/" component = {Projects} />
-                        <Route path = "/articles" component = {Articles}/>
-                        <Route path = "/about" component = {About} />
-                        <Route path = "/arduino" component = {Arduino} /> 
-                      */}
-
-                  </section>
-
-                </div>
-                
-                <Introduction />
-              </div>
-            </div> 
-            <div className="education">
-            <Route exact path = "/" component = {Home} />
-            </div>
-          </div> ///app
-
+      </div>
         </Particles>
-      </div> //main
-
+      </div> 
     </Router>
+
   );
 }
 
