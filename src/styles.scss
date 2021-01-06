@@ -4,10 +4,6 @@
 
 .App {
   text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right: 3%;
-  padding-left: 3%;
 
 }
 
@@ -176,18 +172,10 @@ background-color: rgb(88, 91, 248);
 } 
 
 .page-container{
-  background-color: white;
   padding: 1%;
   border-radius: 25px;
 }
 
-.education{
-  border-radius: 25px;
-  background-color: white;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin: 5%;
-}
 
 .column{
   padding: 1px;
@@ -204,9 +192,8 @@ background-color: rgb(88, 91, 248);
 
 .flex-container{
   border-radius: 15px;
-  /*background-color: white;*/
-  padding: 3%;
-  margin: 6%;
+  padding: 1%;
+  margin: 12%;
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
@@ -246,10 +233,10 @@ background-color: rgb(88, 91, 248);
 
 @keyframes wobble {
   25% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
   }
   50% {
-    transform: rotate(-30deg);
+    transform: rotate(-5deg);
   }
   75% {
     transform: rotate(5deg);
@@ -335,6 +322,10 @@ ul li a i {
   color: #000;
   border: 1px solid #000;
   background: transparent !important; 
+  text-align: center;
+  align-content: right;
+  vertical-align: middle;
+
 }
 
 .btn.btn-learn:hover {
@@ -343,6 +334,10 @@ ul li a i {
   @media screen and (max-width: 768px) {
     .btn {
       width: 100%; }
+}
+  @media screen and (min-width: 100px) {
+    .btn {
+      width: 70%; }
 }
 
 .resume{

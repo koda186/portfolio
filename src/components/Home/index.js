@@ -1,5 +1,5 @@
 import React from 'react';
-import MyEducation from "../Education"
+import Education from "../Education"
 import SectionTitle from "../SectionTitle";
 import Projects from "../Project";
 import "./index.css";
@@ -13,7 +13,7 @@ export default class Home extends React.Component {
         <SectionTitle
           curDir={"/education"}
         />
-        <MyEducation />
+        <Education />
       </div >
     );
   }

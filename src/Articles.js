@@ -2,7 +2,7 @@ import React from "react"
  
 function Articles(props) {
   return (
-    <div>
+    <div className="flex-container">
       <h1>Articles</h1>
     </div>
   )

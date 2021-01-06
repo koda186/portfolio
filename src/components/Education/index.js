@@ -1,20 +1,17 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { withGetScreen } from 'react-getscreen'
 import "./index.css";
-//import SectionTitle from "../SectionTitle";
 
 
-class MyEducation extends React.Component {
+class Education extends React.Component {
   render() {
     if (this.props.isMobile()) {
       return (
-          <div className = "education-container">
             <Container>
-
+              <div style="text-align:center"><h1>EDUCATION</h1></div>
               <h3>School</h3>
               <b>Name:</b> St. Edward's University <br />
               <b>Degree:</b> Bachelor of Science - BS <br />
@@ -36,7 +33,7 @@ class MyEducation extends React.Component {
               <h3>Tech</h3>
               <b>DBMS:</b> MongoDB • MySQL <br />
               <b>Frameworks/Libraries:</b> Bootstrap
-              • Django
+              • Django <br />
               • Express
               • Mongoose
               • Node
@@ -73,7 +70,7 @@ class MyEducation extends React.Component {
               • CI/CD
               • HackerRank: Problem Solving Gold Badge
               • IoT (Raspberry Pi)
-              • Linux distributions: Arch, Kali, Ubuntu
+              • Linux distributions: Ubuntu
               • Nginx configuration
               • Scrum Team/Master
               • SDLC
@@ -82,12 +79,10 @@ class MyEducation extends React.Component {
               • Unit/Integration Testing
 
             </Container>
-          </div>
         
       );
     } else {
       return (
-          <div className = "education-container">
             <Container>
               <Row>
                 <Col>
@@ -121,7 +116,7 @@ class MyEducation extends React.Component {
 
                         <b>DBMS:</b> MongoDB • MySQL <br />
                         <b>Frameworks/Libraries:</b> Bootstrap
-                          • Django
+                          • Django <br />
                           • Express
                           • Flask
                           • Mongoose
@@ -143,12 +138,12 @@ class MyEducation extends React.Component {
                         Docker
                         • Cloud computing: DigitalOcean Droplet
                         • GDB
-                        • Git (Bitbucket, GitHub)
+                        • Git (Bitbucket, GitHub) <br />
                         • IDE's: Eclipse, IntelliJ, PyCharm, VS Code, Xcode
                         • Postman
                         • Slack
                         • Tmux
-                        • Trello
+                        • Trello <br />
                         • Vim
                         • VirtualBox
                       </td>
@@ -161,10 +156,10 @@ class MyEducation extends React.Component {
                     <tr>
                       <td className="edu-field"><h3>Courses</h3></td>
                       <td>
-                        Algorithms & Data Structures
-                        • Component-Based Programming
-                        • Computer Security & Privacy
-                        • Computing Sciences Concepts I/II + Lab
+                        Algorithms & Data Structures <br />
+                        • Component-Based Programming <br />
+                        • Computer Security & Privacy <br />
+                        • Computing Sciences Concepts I/II + Lab <br />
                         • Database Theory
                         • Intro Computer Organization & Architecture
                         • Operating Systems
@@ -178,17 +173,17 @@ class MyEducation extends React.Component {
                     <tr>
                       <td className="edu-field"><h3>Other</h3></td>
                       <td>
-                        Agile Software Development
+                        Agile Software Development <br />
                         • Backlogging/Sprints Planning
-                        • CI/CD
+                        • CI/CD <br />
                         • HackerRank: Problem Solving Gold Badge
                         • IoT (Raspberry Pi)
-                        • Linux distributions: Arch, Kali, Ubuntu
-                        • Nginx configuration
+                        • Linux distributions: Ubuntu
+                        • Nginx configuration <br />
                         • Scrum Team/Master
                         • SDLC
                         • System Diagram & Design Artifacts
-                        • UCD
+                        • UCD <br />
                         • Unit/Integration Testing
                       </td>
                     </tr>
@@ -196,11 +191,10 @@ class MyEducation extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </div>
  
       )
     }
   }
 }
 
-export default withGetScreen(MyEducation);
+export default withGetScreen(Education);

@@ -17,7 +17,7 @@ function Projects(props) {
     // Render the Thumbnail component
     <div className="flex-container">
     <section className="projects" data-section="projects">
-      <Container>
+      <Container fluid>
 
         {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
         <Row>

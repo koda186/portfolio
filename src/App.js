@@ -1,28 +1,29 @@
 //import React from 'react';
 import React, { useState, useRef } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { useSpring, animated } from 'react-spring';
+import ReactParticles from 'react-particles-js';
+import particlesConfig from './particles-config.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.scss';
+import Home from "./components/Home";
+import MyNav from "./components/NavBar";
+import Sidebar from "./components/Sidebar.js";
+import Projects from "./components/Project";
+import Education from './components/Education'
+import About from "./components/About";
+import Arduino from "./components/Arduino";
+import Introduction from "./components/Introduction";
+import FadeExample from "./components/FadeExample";
+import Articles from './Articles.js';
 //import logo from './logo.svg';
 //import linkedIn from './images/linkedIn.png'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import Nav from './components/Nav.js';
-import MyNav from "./components/NavBar"
-import Home from "./components/Home"
-import Sidebar from './components/Sidebar.js';
-import Projects from "./components/Project";
-import Articles from './Articles.js';
-import About from './About.js';
-import Arduino from './Arduino.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Introduction from './components/Introduction';
-import FadeExample from './components/FadeExample';
+
 
 
 
 //import ReactDOM from 'react-dom';
-import { useSpring, animated } from 'react-spring';
-import ReactParticles from 'react-particles-js';
-import particlesConfig from './particles-config.js';
-import './styles.scss';
 
 
 // The react-router-dom library provides a component called 
@@ -37,14 +38,13 @@ function App() {
         <Particles>
       <div className='App'>
         <MyNav />
-        
         <Route exact path='/' component={Home} />
         <Route path = "/projects" component = {Projects} />
-        <Route path = "/articles" component = {Articles}/>
+        <Route path = "/education" component = {Education} />
+        <Route path = "/articles" component = {Articles} />
         <Route path = "/about" component = {About} />
         <Route path = "/arduino" component = {Arduino} />
 
-        
         {/*<Route path='/experience' component={MyExperience} />
         <Route path='/projects' component={MyProjects} />
         <Route path='/🥼' component={MyLab} />*/}

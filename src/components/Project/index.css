@@ -1,9 +1,35 @@
 .image-container{
   border-radius: 15px;
-  /*background-color: white;*/
-  padding: 5%;
-  margin: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 5%;
   position: relative;
   overflow-y: auto;
   z-index: 1; /*9999;*/
+}
+.container-fluid{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 6%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+}
+
+
+.image-inner-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.flex-container{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 6%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
 }
