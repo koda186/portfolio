@@ -16,6 +16,8 @@ import Arduino from "./components/Arduino";
 import Introduction from "./components/Introduction";
 import FadeExample from "./components/FadeExample";
 import Articles from './Articles.js';
+//import Resume from "./components/Resume"
+//import resumeRobertAllen from "./components/Resume/pdf/resumeRobertAllen.pdf";
 //import logo from './logo.svg';
 //import linkedIn from './images/linkedIn.png'
 //import Nav from './components/Nav.js';
@@ -44,10 +46,9 @@ function App() {
         <Route path = "/articles" component = {Articles} />
         <Route path = "/about" component = {About} />
         <Route path = "/arduino" component = {Arduino} />
-
-        {/*<Route path='/experience' component={MyExperience} />
-        <Route path='/projects' component={MyProjects} />
-        <Route path='/🥼' component={MyLab} />*/}
+   
+        {/*<h4>Resume</h4>*/}
+        {/*<Resume pdf={resumeRobertAllen} />*/}
 
       </div>
         </Particles>
