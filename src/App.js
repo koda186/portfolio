@@ -16,6 +16,9 @@ import Arduino from "./components/Arduino";
 import Introduction from "./components/Introduction";
 import FadeExample from "./components/FadeExample";
 import Articles from './Articles.js';
+
+import styles from './styles.scss';
+
 //import Resume from "./components/Resume"
 //import resumeRobertAllen from "./components/Resume/pdf/resumeRobertAllen.pdf";
 //import logo from './logo.svg';

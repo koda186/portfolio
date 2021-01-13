@@ -17,17 +17,17 @@ class Education extends React.Component {
               <b>Degree:</b> Bachelor of Science - BS <br />
               <b>Major:</b> Computer Science <br />
 
-              <h3>Lang's</h3>
-              Assembly Language
+              <h3>Lang's </h3>
+              • Assembly Language
               • Bash
               • C
-              • C++
+              • <b>Cplus-plus </b> <br />
               • <b>Java </b>
               • JavaScript
               • NoSQL
               • PHP
-              • <b>Python </b>
-              • Swift
+              • <b>Python </b> <br />
+              • Swift 
               • SQL
 
               <h3>Tech</h3>
@@ -40,24 +40,23 @@ class Education extends React.Component {
               • React
 
               <h3>Tools</h3>
-              Docker
-              • Cloud computing: DigitalOcean Droplet
+              • Docker
               • Git (Bitbucket, GitHub)
-              • IDE's: Eclipse, IntelliJ, PyCharm, VS Code, Xcode
               • Postman
-              • Slack
-              • Tmux
+              • Slack <br />
               • Trello
               • Vim
               • VirtualBox
+              <b>Cloud computing: </b> DigitalOcean Droplet <br />
+              <b>IDE's: </b> Eclipse, IntelliJ, PyCharm, VS Code, Xcode
 
               <h3>Courses</h3>
-              Algorithms & Data Structures
+              • Algorithms & Data Structures
               • Component-Based Programming
               • Computer Security & Privacy
               • Computing Sciences Concepts I/II + Lab
               • Database Theory
-              • Intro Computer Organization & Architecture
+              • Computer Organization & Architecture
               • Operating Systems
               • Program Languages
               • Senior Research Project
@@ -65,18 +64,18 @@ class Education extends React.Component {
               • Web Programming
 
               <h3>Other</h3>
-              Agile Software Development
-              • Backlogging/Sprints Planning
-              • CI/CD
-              • HackerRank: Problem Solving Gold Badge
-              • IoT (Raspberry Pi)
-              • Linux distributions: Ubuntu
-              • Nginx configuration
+              • Agile Software Development <br />
+              • System Diagram & Design Artifacts <br />
               • Scrum Team/Master
               • SDLC
-              • System Diagram & Design Artifacts
-              • UCD
-              • Unit/Integration Testing
+              • UCD <br />
+              • Backlogging/Sprints Planning
+              • CI/CD <br />
+              • Nginx configuration <br />
+              • Unit/Integration Testing <br />
+              <b>Protocols: </b> MQTT, REST, HTTP, and Websocket <br />
+              <b>IoT: </b> (Raspberry Pi, Arduino) <br />
+              <b>Linux distributions: </b> Ubuntu, Raspbian, Kali
 
             </Container>
         
@@ -97,15 +96,15 @@ class Education extends React.Component {
                     <tr>
                       <td className="edu-field"><h3>Lang's</h3></td>
                       <td>
-                        Assembly Language
+                        • Assembly Language
                         • Bash
                         • C
-                        • Cplus-plus
+                        • <b>Cplus-plus </b> <br />
                         • <b>Java </b>
                         • JavaScript
                         • NoSQL
                         • PHP
-                        • <b>Python </b>
+                        • <b>Python </b> <br />
                         • Swift
                         • SQL
                       </td>
@@ -114,8 +113,8 @@ class Education extends React.Component {
                       <td className="edu-field"><h3>Tech</h3></td>
                       <td>
 
-                        <b>DBMS:</b> MongoDB • MySQL <br />
-                        <b>Frameworks/Libraries:</b> Bootstrap
+                        <b>DBMS:</b> • MongoDB • MySQL <br />
+                        <b>Frameworks/Libraries:</b> • Bootstrap
                           • Django <br />
                           • Express
                           • Flask
@@ -127,25 +126,22 @@ class Education extends React.Component {
                     {/* <tr>
                       <td className="edu-field"><h3>DBMs</h3></td>
                       <td>
-                        MongoDB
-                          • MySQL
-
+                        • MongoDB
+                        • MySQL
                       </td>
                     </tr> */}
                     <tr>
                       <td className="edu-field"><h3>Tools</h3></td>
                       <td>
-                        Docker
-                        • Cloud computing: DigitalOcean Droplet
-                        • GDB
-                        • Git (Bitbucket, GitHub) <br />
-                        • IDE's: Eclipse, IntelliJ, PyCharm, VS Code, Xcode
+                        • Docker
+                        • Git (Bitbucket, GitHub)
                         • Postman
-                        • Slack
-                        • Tmux
-                        • Trello <br />
+                        • Slack <br />
+                        • Trello 
                         • Vim
-                        • VirtualBox
+                        • VirtualBox <br />
+                        <b>Cloud computing: </b> DigitalOcean Droplet <br />
+                        <b>IDE's: </b> Eclipse, IntelliJ, PyCharm, VS Code, Xcode
                       </td>
                     </tr>
 
@@ -156,12 +152,12 @@ class Education extends React.Component {
                     <tr>
                       <td className="edu-field"><h3>Courses</h3></td>
                       <td>
-                        Algorithms & Data Structures <br />
+                        • Algorithms & Data Structures <br />
                         • Component-Based Programming <br />
                         • Computer Security & Privacy <br />
                         • Computing Sciences Concepts I/II + Lab <br />
                         • Database Theory
-                        • Intro Computer Organization & Architecture
+                        • Computer Organization & Architecture
                         • Operating Systems
                         • Program Languages
                         • Senior Research Project
@@ -173,18 +169,18 @@ class Education extends React.Component {
                     <tr>
                       <td className="edu-field"><h3>Other</h3></td>
                       <td>
-                        Agile Software Development <br />
-                        • Backlogging/Sprints Planning
-                        • CI/CD <br />
-                        • HackerRank: Problem Solving Gold Badge
-                        • IoT (Raspberry Pi)
-                        • Linux distributions: Ubuntu
-                        • Nginx configuration <br />
+                        • Agile Software Development <br />
+                        • System Diagram & Design Artifacts <br />
                         • Scrum Team/Master
                         • SDLC
-                        • System Diagram & Design Artifacts
                         • UCD <br />
-                        • Unit/Integration Testing
+                        • Backlogging/Sprints Planning
+                        • CI/CD <br />
+                        • Nginx configuration <br />
+                        • Unit/Integration Testing <br />
+                        <b>Protocols: </b> MQTT, REST, HTTP, and Websocket <br />
+                        <b>IoT: </b> (Raspberry Pi, Arduino) <br />
+                        <b>Linux distributions: </b> Ubuntu, Raspbian, Kali
                       </td>
                     </tr>
                   </table>
