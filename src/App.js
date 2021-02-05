@@ -1,7 +1,7 @@
-//import React from 'react';
-import React, { useState, useRef } from 'react';
+import React from 'react';
+//import React, { useState, useRef } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
+//import { useSpring, animated } from 'react-spring';
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,9 +39,8 @@ import styles from './styles.scss';
 function App() {
   return (
     <Router>
-      <div className="main">
+      <div className="App">
         <Particles>
-      <div className='App'>
         <MyNav />
         <Route exact path='/' component={Home} />
         <Route path = "/projects" component = {Projects} />
@@ -49,13 +48,9 @@ function App() {
         <Route path = "/articles" component = {Articles} />
         <Route path = "/about" component = {About} />
         <Route path = "/arduino" component = {Arduino} />
-   
-        {/*<h4>Resume</h4>*/}
-        {/*<Resume pdf={resumeRobertAllen} />*/}
-
-      </div>
         </Particles>
-      </div> 
+      </div>
+ 
     </Router>
 
   );

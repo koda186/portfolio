@@ -1,10 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+
 
 .App {
   text-align: center;
-
+  margin-top: 10%;
+  padding-bottom: 1%;
 }
 
 .App-logo {
@@ -36,14 +35,14 @@ nav{
   justify-content: space-around;
   list-style: none;
   padding-right: 4px;
-  padding-left: 10px;
+  padding-left: 12px;
   text-align: justify;
 }
 @media screen and (max-width: 558px) {
   .nav {
   justify-content: space-around;
   text-align: justify;
-  margin: 2%;
+  margin: 3%;
   }
   }
 
@@ -330,7 +329,7 @@ ul li a i {
 
 .btn.btn-learn:hover {
   background: blueviolet !important;
-  border: 1px solid #000 !important; }
+  border: 2px solid #000 !important; }
   @media screen and (max-width: 768px) {
     .btn {
       width: 100%; }
@@ -346,7 +345,7 @@ ul li a i {
   clear: both; 
   margin-right: 5%;
   padding-top: 3%;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 
@@ -356,9 +355,8 @@ ul li a i {
 
   width:100%; 
   float: center;
-
- 
   }
+  
   ul li {
   position: relative; 
   list-style-type: none;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { withGetScreen } from 'react-getscreen'
@@ -10,8 +9,7 @@ class Education extends React.Component {
   render() {
     if (this.props.isMobile()) {
       return (
-            <Container>
-              <div style="text-align:center"><h1>EDUCATION</h1></div>
+            <div className="container">
               <h3>School</h3>
               <b>Name:</b> St. Edward's University <br />
               <b>Degree:</b> Bachelor of Science - BS <br />
@@ -77,12 +75,12 @@ class Education extends React.Component {
               <b>IoT: </b> (Raspberry Pi, Arduino) <br />
               <b>Linux distributions: </b> Ubuntu, Raspbian, Kali
 
-            </Container>
+            </div>
         
       );
     } else {
       return (
-            <Container>
+            <div className="container">
               <Row>
                 <Col>
                   <table >
@@ -186,7 +184,7 @@ class Education extends React.Component {
                   </table>
                 </Col>
               </Row>
-            </Container>
+            </div>
  
       )
     }

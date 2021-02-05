@@ -6,21 +6,12 @@
   text-align: left;
   /*problem fix padding here and in styles.scss*/
   border-radius: 15px;
-  padding-top: 3%;
-  margin-top: 10%;
-
-  /*add on media for mobile*/
-  margin-bottom: 10%;
-  padding-bottom: 3%;
-  position: relative;
-  overflow-y: auto;
-  z-index: 1; /*9999;*/
+  /*padding-top: 3%;*/
 }
 
 td {
   vertical-align: text-top;
   padding: 8px;
-  margin: 100%;
   
 }
 
