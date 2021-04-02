@@ -23,10 +23,21 @@
   max-width: 250px;
 }
 
+/*
 .flex-container{
   border-radius: 15px;
   padding: 2%;
   position: relative;
   overflow-y: auto;
-  z-index: 3; /*9999;*/
+  z-index: 3;
+}
+*/
+
+.flex-container{
+  border-radius: 15px;
+  padding: 2%;
+  margin: 12%;
+  position: relative;
+  overflow-y: non;
+  z-index: 1;
 }

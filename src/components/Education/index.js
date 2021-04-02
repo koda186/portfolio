@@ -9,7 +9,7 @@ class Education extends React.Component {
   render() {
     if (this.props.isMobile()) {
       return (
-            <div className="container">
+            <div className="flex-container">
               <h3>School</h3>
               <b>Name:</b> St. Edward's University <br />
               <b>Degree:</b> Bachelor of Science - BS <br />
@@ -25,7 +25,7 @@ class Education extends React.Component {
               • NoSQL
               • PHP
               • <b>Python </b> <br />
-              • Swift 
+              • Swift
               • SQL
 
               <h3>Tech</h3>
@@ -76,11 +76,11 @@ class Education extends React.Component {
               <b>Linux distributions: </b> Ubuntu, Raspbian, Kali
 
             </div>
-        
+
       );
     } else {
       return (
-            <div className="container">
+            <div className="flex-container">
               <Row>
                 <Col>
                   <table >
@@ -135,7 +135,7 @@ class Education extends React.Component {
                         • Git (Bitbucket, GitHub)
                         • Postman
                         • Slack <br />
-                        • Trello 
+                        • Trello
                         • Vim
                         • VirtualBox <br />
                         <b>Cloud computing: </b> DigitalOcean Droplet <br />
@@ -185,7 +185,7 @@ class Education extends React.Component {
                 </Col>
               </Row>
             </div>
- 
+
       )
     }
   }

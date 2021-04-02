@@ -1,18 +1,29 @@
+
+/*
 .container {
   background-color: white;
   position: relative;
   overflow-y: auto;
-  z-index: 3; /*9999;*/
+  z-index: 3;
   text-align: left;
-  /*problem fix padding here and in styles.scss*/
   border-radius: 15px;
   /*padding-top: 3%;*/
+/*}*/
+
+
+.flex-container{
+  border-radius: 15px;
+  text-align: left;
+  padding-top: 2%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
 }
 
 td {
   vertical-align: text-top;
   padding: 8px;
-  
+
 }
 
 td.edu-field {
