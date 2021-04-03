@@ -1,5 +1,6 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"; // eslint-disable-next-line
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from 'axios';
 
 
 class ContactForm extends React.Component {
@@ -11,6 +12,26 @@ class ContactForm extends React.Component {
       message: ''
     }
   }
+
+  handleSubmit(e){
+  e.preventDefault();
+  axios({
+    method: "POST",
+    url:"http://localhost:3000/send",
+    data:  this.state
+  }).then((response)=>{
+    if (response.data.status === 'success') {
+      alert("Message Sent.");
+      this.resetForm()
+    } else if (response.data.status === 'fail') {
+      alert("Message failed to send.")
+    }
+  })
+}
+
+resetForm(){
+  this.setState({name: '', email: '', message: ''})
+}
 
   render() {
     return(
@@ -28,7 +49,7 @@ class ContactForm extends React.Component {
             <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
           <div class="col text-center">
-          <button type="button" class="btn btn-primary btn-lg">Submit</button>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
           </div>
         </form>
     );
@@ -46,8 +67,6 @@ class ContactForm extends React.Component {
       this.setState({message: event.target.value})
     }
 
-    handleSubmit(event) {
-    }
   }
 
 export default ContactForm;
