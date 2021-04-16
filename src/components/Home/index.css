@@ -1,3 +1,12 @@
+/* ------------ */
+/* Education section */
+/* ------------ */
+.EDU-name {
+  font-size: 2.5em !important;
+  text-align: center;
+  padding-bottom: 0px !important;
+}
+
 .homeEdu{
   /*background-color: #F8E981;*/
   background-image: linear-gradient( 135deg, #EAC79C 10%, #EAC79C 100%);
@@ -96,12 +105,12 @@
 .form-name {
   font-size: 2.5em !important;
   text-align: center;
-  padding-bottom: 45px !important;
+  padding-bottom: 40px !important;
 }
 
 .form-content {
   padding: 3rem 0 2rem !important;
-  color: #3b5998;
+  color: #F8E9A1;
   text-align: left;
 }
 

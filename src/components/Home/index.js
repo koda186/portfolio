@@ -42,15 +42,20 @@ export default class Home extends React.Component {
 
       </section>
 
+      <section>
       <div className="homeProject">
         <Projects />
+      </div>
+      </section>
+
+      <section>
         <div className="homeEdu">
-        <h1 className="form-name">
+        <h1 className="EDU-name">
           <strong className="main-name"> Education</strong>
         </h1>
           <Education />
         </div>
-      </div>
+        </section>
 
 
       <section>

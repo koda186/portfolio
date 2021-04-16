@@ -12,10 +12,24 @@
 .education{
   border-radius: 15px;
   text-align: left;
-  padding-top: 1%;
+  padding: 4%;
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
+}
+
+.mobile-education{
+  border-radius: 15px;
+  text-align: left;
+  padding-top: 2%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+}
+
+.subject-name {
+  padding-top: 5%;
+  color: #374785;
 }
 
 .flex-container{

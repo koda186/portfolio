@@ -37,19 +37,19 @@ resetForm(){
     return(
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name"><h5><b>Name</b></h5></label>
             <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1"><h5><b>Email address</b></h5></label>
             <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message"><h5><b>Message</b></h5></label>
             <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
           <div className="col text-center">
-          <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+          <button type="submit" className="btn btn-primary btn-lg"><b>Submit</b></button>
           </div>
         </form>
     );
