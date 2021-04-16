@@ -1,6 +1,28 @@
+
+.navbar{
+  background-color: #F4976C;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 4px;
+  padding-left: 12px;
+  text-align: justify;
+}
+@media screen and (max-width: 558px) {
+  .navbar {
+  justify-content: space-around;
+  text-align: justify;
+  padding-top: 3%;
+  padding-bottom: 3%
+  }
+  }
+
 .navbar-brand {
   margin-left: 10%; /* Text spaced out from left border */
 }
+.navbar-brand:hover {
+color: #A8D0E6; /*will change color of text within the element on hover */
+}
+
 
 .fa {
   margin-right: 0.5%;

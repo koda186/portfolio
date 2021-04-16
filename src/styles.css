@@ -43,22 +43,6 @@ body {
   font-family: Raleway;
 }
 
-nav{
-  background-color: #F4976C;
-  justify-content: space-around;
-  list-style: none;
-  padding-right: 4px;
-  padding-left: 12px;
-  text-align: justify;
-}
-@media screen and (max-width: 558px) {
-  .nav {
-  justify-content: space-around;
-  text-align: justify;
-  margin: 3%;
-  }
-  }
-
 .main {
   display: flex;
   flex-direction: column;
@@ -437,20 +421,9 @@ ul li a i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*particles
 background: linear-gradient(180deg, #2a3267, #1e282f 100%);*/
-
+/*
 .hero {
   display: flex;
   flex-direction: column;
@@ -519,4 +492,4 @@ background: linear-gradient(180deg, #2a3267, #1e282f 100%);*/
 }
 
 
-/*cards*/
+cards*/

@@ -9,11 +9,12 @@ import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
 
- 
+
 //Projects component
 //The data we pass into the thumbnails are the props
 function Projects(props) {
   return (
+    
     // Render the Thumbnail component
     <div className="flex-container">
     <section className="projects" data-section="projects">
@@ -30,7 +31,7 @@ function Projects(props) {
           <Col xs={12} md={6}>
             <Thumbnail
             link = "/arduino"
-            image= {arduino} alt= "100x100 " 
+            image= {arduino} alt= "100x100 "
             />
           </Col>
         </Row>
@@ -56,5 +57,5 @@ function Projects(props) {
     </div>
   );
 }
- 
+
 export default Projects;
