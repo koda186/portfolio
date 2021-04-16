@@ -3,16 +3,13 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import { useSpring, animated } from 'react-spring';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.scss';
+import './styles.css';
 import Home from "./components/Home";
 import MyNav from "./components/NavBar";
-import Sidebar from "./components/Sidebar.js";
 import Projects from "./components/Project";
 import Education from './components/Education'
 import About from "./components/About";
 import Arduino from "./components/Arduino";
-import Introduction from "./components/Introduction";
-import FadeExample from "./components/FadeExample";
 
 
 //import Resume from "./components/Resume"

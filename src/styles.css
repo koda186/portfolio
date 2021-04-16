@@ -1,5 +1,4 @@
 
-
 .App {
   text-align: center;
   /*margin-top: 10%;    This is the reason edu display wrong*/
@@ -30,8 +29,22 @@
   }
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  /*  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);*/
+  background-image: linear-gradient( 200deg, #A8D0E6 10%, #374785 100%);
+  background-attachment: fixed;
+
+  font-family: Raleway;
+}
+
 nav{
-  background-color: white;
+  background-color: #F4976C;
   justify-content: space-around;
   list-style: none;
   padding-right: 4px;
@@ -131,7 +144,7 @@ background-color: rgb(88, 91, 248);
   color-adjust: bold;
 }
 .link:hover {
-   color: #00F
+   color: blueviolet;
 }
 .linkedIn{
   height: 5%;
@@ -301,11 +314,6 @@ ul li a i {
   padding: 5%
 
 }
-.fa-facebook {
-  background:#3b5998
-}
-
-
 
 .btn{
   width: 30%;
@@ -440,7 +448,8 @@ ul li a i {
 
 
 
-/*particles*/
+/*particles
+background: linear-gradient(180deg, #2a3267, #1e282f 100%);*/
 
 .hero {
   display: flex;
@@ -511,17 +520,3 @@ ul li a i {
 
 
 /*cards*/
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-
-  margin: 0;
-  padding: 0;
-
-  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-  background-attachment: fixed;
-
-  font-family: Raleway;
-}

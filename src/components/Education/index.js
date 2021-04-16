@@ -80,10 +80,11 @@ class Education extends React.Component {
       );
     } else {
       return (
-            <div className="flex-container">
+            <div className="education">
               <Row>
                 <Col>
                   <table >
+                    <tbody>
                     <tr>
                       <td className="edu-field"><h3>School</h3></td>
                       <td><b>Name:</b> St. Edward's University <br />
@@ -142,11 +143,12 @@ class Education extends React.Component {
                         <b>IDE's: </b> Eclipse, IntelliJ, PyCharm, VS Code, Xcode
                       </td>
                     </tr>
-
+                  </tbody>
                   </table>
                 </Col>
                 <Col>
                   <table >
+                  <tbody>
                     <tr>
                       <td className="edu-field"><h3>Courses</h3></td>
                       <td>
@@ -181,6 +183,7 @@ class Education extends React.Component {
                         <b>Linux distributions: </b> Ubuntu, Raspbian, Kali
                       </td>
                     </tr>
+                  </tbody>
                   </table>
                 </Col>
               </Row>

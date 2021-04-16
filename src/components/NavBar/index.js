@@ -10,7 +10,7 @@ class MyNav extends React.Component {
   render() {
     return (
 
-      <Navbar fixed="top" bg="light" expand="lg">
+      <Navbar fixed="top" expand="lg">
         <Navbar.Brand as={Link} to="/">Robert Allen</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

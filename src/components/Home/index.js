@@ -45,7 +45,9 @@ export default class Home extends React.Component {
       <div className="homeProject">
         <Projects />
         <div className="homeEdu">
-          <h2> Education </h2>
+        <h1 className="form-name">
+          <strong className="main-name"> Education</strong>
+        </h1>
           <Education />
         </div>
       </div>
@@ -75,7 +77,7 @@ export default class Home extends React.Component {
 
             <Row>
               <Col md={7} className="form-header">
-                <div style={{paddingBottom: 50, paddingRight: 50, textAlign: "left" }}>
+                <div style={{paddingBottom: 50, paddingLeft: 0, textAlign: "Left" }}>
                   <FTyping />
                 </div>
               </Col>

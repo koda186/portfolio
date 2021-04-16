@@ -9,7 +9,14 @@
   border-radius: 15px;
   /*padding-top: 3%;*/
 /*}*/
-
+.education{
+  border-radius: 15px;
+  text-align: left;
+  padding-top: 1%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+}
 
 .flex-container{
   border-radius: 15px;

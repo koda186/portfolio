@@ -48,8 +48,8 @@ resetForm(){
             <label htmlFor="message">Message</label>
             <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
-          <div class="col text-center">
-          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          <div className="col text-center">
+          <button type="submit" className="btn btn-primary btn-lg">Submit</button>
           </div>
         </form>
     );
