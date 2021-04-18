@@ -9,7 +9,6 @@ import Type from "./Type";
 import FTyping from "./FormTypewriter";
 import homeLogo from "../../images/HomePageJourney.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TrackVisibility from 'react-on-screen';
 
 
 export default class Home extends React.Component {
@@ -17,7 +16,7 @@ export default class Home extends React.Component {
 
     return (
       <>
-      <section>
+      <section id="section1">
             <Particle />
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
@@ -28,7 +27,7 @@ export default class Home extends React.Component {
                 </h1>
 
                 <h1 className="heading-name">
-                  I'M
+                  I'm
                   <strong className="main-name"> Robert Allen</strong>
                 </h1>
 
@@ -43,15 +42,13 @@ export default class Home extends React.Component {
 
       </section>
 
-      <section>
+      <section id="section2">
         <div className="homeProject">
-        <TrackVisibility once>
           <Projects />
-        </TrackVisibility>
           </div>
       </section>
 
-      <section>
+      <section id = "section3">
         <div className="homeEdu">
           <h1 className="EDU-name">
             <strong className="main-name"> Education</strong>
@@ -61,7 +58,7 @@ export default class Home extends React.Component {
       </section>
 
 
-      <section>
+      <section id="section4">
             <Particle />
         <Container fluid className="home-section" id="home">
           <Container className="form-content">

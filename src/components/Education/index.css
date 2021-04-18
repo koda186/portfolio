@@ -1,14 +1,4 @@
 
-/*
-.container {
-  background-color: white;
-  position: relative;
-  overflow-y: auto;
-  z-index: 3;
-  text-align: left;
-  border-radius: 15px;
-  /*padding-top: 3%;*/
-/*}*/
 .education{
   border-radius: 15px;
   text-align: left;
@@ -32,13 +22,8 @@
   color: #374785;
 }
 
-.flex-container{
-  border-radius: 15px;
-  text-align: left;
-  padding-top: 2%;
-  position: relative;
-  overflow-y: auto;
-  z-index: 3; /*9999;*/
+.edu-field{
+  color: #374785;
 }
 
 td {

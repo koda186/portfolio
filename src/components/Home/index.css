@@ -1,3 +1,16 @@
+
+/* ------------ */
+/* Project section */
+/* ------------ */
+.homeProject{
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+  text-align: center;
+  padding-top: 0% !important;
+  margin-top: 5% !important;
+}
+
 /* ------------ */
 /* Education section */
 /* ------------ */
@@ -15,8 +28,8 @@
   overflow-y: auto;
   z-index: 3; /*9999;*/
   text-align: center;
-  padding-top: 0% !important;
-  margin-top: 0% !important;
+  padding-top: 18px !important;
+  margin-top: 8% !important;
 
 }
 
@@ -75,7 +88,7 @@
   background-image: var(--image-gradient), url(../../images/HomePageJourney.png);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 0px !important;
+  padding-bottom: 85px !important;
   padding-top: 20px !important;
 }
 

@@ -10,6 +10,7 @@ import Projects from "./components/Project";
 import Education from './components/Education'
 import About from "./components/About";
 import Arduino from "./components/Arduino";
+import ScrollToTop from "./components/ScrollToTop"
 
 
 //import Resume from "./components/Resume"
@@ -33,6 +34,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <MyNav />
         <Switch>
         <Route exact path='/' component={Home} />

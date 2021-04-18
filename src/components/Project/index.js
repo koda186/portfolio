@@ -14,7 +14,7 @@ import {Container} from 'react-bootstrap';
 //The data we pass into the thumbnails are the props
 function Projects(props) {
   return (
-    
+
     // Render the Thumbnail component
     <div className="flex-container">
     <section className="projects" data-section="projects">
