@@ -13,9 +13,11 @@ class MyNav extends React.Component {
     return (
 
       <Navbar fixed="top" expand="lg">
-        <Navbar.Brand as={Link} className= "section" to="/">Robert Allen</Navbar.Brand>
+      <Navbar.Brand as={Link} className= "section" to="/">Robert Allen</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+
           <Nav className="mr-auto">
             {/* Link to router */}
             {/* <Nav.Link as={Link} to="/">Robert Allen</Nav.Link>

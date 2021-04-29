@@ -206,7 +206,7 @@ background-color: rgb(88, 91, 248);
   z-index: 3; /*9999;*/
 }
 
-
+/*Project Image Prop - wobble*/
 .image {
   display: block;
   margin: 0 auto;
@@ -252,22 +252,21 @@ background-color: rgb(88, 91, 248);
 
 }
 
+/*
 .project {
-  /*width: calc(50% - 100px);*/
   width: calc(100%);
   fill-opacity: initial;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  /*background-color: rgb(88, 91, 248);*/
 
   border-radius: 25px;
-  /*float: center;*/
   position: relative;
   overflow-y: auto;
-  z-index: 9999; /*9999;*/
-
+  z-index: 9999;
+  width: calc(50% - 100px);
 }
+*/
 
 
 .icons

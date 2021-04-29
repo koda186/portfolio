@@ -6,6 +6,7 @@
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
+
 }
 
 .mobile-education{
@@ -15,11 +16,13 @@
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 .subject-name {
   padding-top: 5%;
   color: #374785;
+  font-family: 'Roboto', sans-serif;
 }
 
 .edu-field{

@@ -51,11 +51,11 @@ class Education extends React.Component {
               </h3>
               • Docker
               • Git (Bitbucket, GitHub)
-              • Postman
-              • Slack <br />
+              • Postman <br />
+              • Slack
               • Trello
               • Vim
-              • VirtualBox
+              • VirtualBox <br />
               <b>Cloud computing: </b> DigitalOcean Droplet <br />
               <b>IDE's: </b> Eclipse, IntelliJ, PyCharm, VS Code, Xcode
 
@@ -64,15 +64,19 @@ class Education extends React.Component {
               </h3>
               • Algorithms & Data Structures
               • Component-Based Programming
-              • Computer Security & Privacy <br />
+              • Computer Security & Privacy
               • Computing Sciences Concepts I/II + Lab
+              • Python
+              • Java
+              • C++
+              • C
               • Database Theory
               • Computer Organization & Architecture <br />
               • Operating Systems
-              • Program Languages
+              • Program Languages <br />
               • Senior Research Project
               • Software Engineering Ⅰ/II + Research
-              • Web Programming
+              • Web Programming <br />
 
               <h3 className="subject">
                 <strong className="subject-name"> Other</strong>
