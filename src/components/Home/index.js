@@ -18,25 +18,48 @@ import AnimateComponent from "./AnimateOnScroll";
 
 export default class Home extends React.Component {
   constructor(props) {
-      super(props);
+      super(props)
+      this.myRef = React.createRef()
       this.state = {
-        isToggled: true
+        scrollTop: 0,
+        isToggled: true,
+        visible: false,
+        scrolling: false,
+        transform: 0,
+        handleScroll: this.handleScroll.bind(this)
       };
     }
-  render() {
-      const { isToggled } = this.props;
-      function onPanStart(event, info) {
-        console.log(info.point.x, info.point.y)
-        this.state.isToggled = true
-      }
 
-      function onPanEnd(event, info) {
-        console.log(info.point.x, info.point.y)
-        this.state.isToggled = false
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+    componentDidUpdate() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+      const scrollY = window.scrollY
+      const scrollTop = this.myRef.current.scrollTop
+      console.log(`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scrollTop}`)
+      this.setState({scrollTop: scrollTop});
+
+      if (window.scrollY === 0 && this.state.scrolling === true) {
+        this.setState({scrolling: false});
+        console.log(this.state.scrolling)
       }
+      else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+        this.setState({scrolling: true});
+      }
+      console.log(this.state.scrolling)
+
+    }
+
+  render() {
+    const {scrollTop} = this.state
     return (
       <>
-      <section id="section1">
+      <section id="section1"ref={this.myRef}
+        onScroll={this.onScroll}>
             <Particle />
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
@@ -77,7 +100,7 @@ export default class Home extends React.Component {
         onHoverEnd={() => this.setState({isToggled: false})}
         >
         <AnimatePresence>
-          {this.state.isToggled === true && (
+          {this.state.scrollTop === 0 && (
             <AnimateComponent>
               <Projects />
             </AnimateComponent>
@@ -135,59 +158,3 @@ export default class Home extends React.Component {
     );
   }
 }
-
-
-function Image({ ratio, src }) {
-  return (
-    <div className="image-container">
-      <div className="image-inner-container">
-        <div
-          className="ratio"
-          style={{
-            paddingTop: ratio * 100 + '%'
-          }}
-        >
-          <div className="ratio-inner">
-            <img src={src} />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Info() {
-  return (
-    <div className="info">
-      Springy cards from{' '}
-      <a target="_blank" href="https://bit.ly/382KSdo">
-        divjoy.com
-      </a>
-      <div className="notice">(best viewed at larger screen width)</div>
-    </div>
-  );
-}
-
-const cards = [
-  {
-    title: 'Build faster ⚡️',
-    description:
-      'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
-    imageRatio: 784 / 1016
-  },
-  {
-    title: 'Tweak anything 👩‍🎨',
-    description:
-      'Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
-    imageRatio: 839 / 1133
-  },
-  {
-    title: 'Export your code 🚀',
-    description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
-  }
-];

@@ -9,7 +9,7 @@ export default function AnimateOnScroll({ children }) {
       initial={{opacity: 0, x: '-250vw'}}
       animate={{opacity: 1, x: 0}}
       transition={{delay: 0, type: 'spring', stiffness: 125}}
-      exit={{ opacity: 0, x: '-250vw' }}
+      exit={{ opacity: 0, y: '-250vw' }}
     >
       {children}
     </motion.div>
