@@ -1,19 +1,40 @@
-.education-container {
- /*background-color: rgb(88, 91, 248);*/
- background-color: white;
- border-radius: 15px;
-  /*background-color: white;*/
+
+.education{
+  border-radius: 15px;
+  text-align: left;
+  padding: 4%;
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
+
 }
 
+.mobile-education{
+  border-radius: 15px;
+  text-align: left;
+  padding-top: 2%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.subject-name {
+  padding-top: 5%;
+  color: #374785;
+  font-family: 'Roboto', sans-serif;
+}
+
+.edu-field{
+  color: #374785;
+}
 
 td {
-  vertical-align: top;
+  vertical-align: text-top;
   padding: 8px;
+
 }
 
 td.edu-field {
-  text-align: right;
+  text-align: left;
 }

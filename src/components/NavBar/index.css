@@ -1,9 +1,70 @@
+
+.navbar{
+  background-color: #F4976C;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 4px;
+  padding-left: 12px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+@media screen and (max-width: 558px) {
+  .navbar {
+  justify-content: space-around;
+  text-align: justify;
+  padding-top: 3%;
+  padding-bottom: 3%
+  }
+  }
+
+a.active {
+  color: #374785;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: justify;
+  font-size: 30px;
+}
+@media screen and (max-width: 558px) {
+  a.active {
+  justify-content: space-around;
+  text-align: justify;
+  padding-top: 3%;
+  padding-bottom: 3%
+  }
+  }
+
+.section{
+  color: #3b5998;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+@media screen and (max-width: 558px) {
+  .section {
+  justify-content: space-around;
+  text-align: justify;
+  padding-top: 3%;
+  padding-bottom: 3%
+  }
+  }
+
 .navbar-brand {
   margin-left: 10%; /* Text spaced out from left border */
 }
+.navbar-brand:hover {
+color: #A8D0E6; /*will change color of text within the element on hover */
+}
+
 
 .fa {
   margin-right: 0.5%;
+  padding-right: 3%;
 }
 
 .fas {
@@ -24,10 +85,6 @@ a.fa.fa-bitbucket:hover {
 
 a.fa.fa-linkedin:hover {
   color: #43c359;
-}
-
-a.fa.fa-hackerrank:hover {
-  color: #1ba94c;
 }
 
 a.fa.fa-envelope:hover {
