@@ -15,9 +15,13 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "caniuse-lite": "^1.0.30001204",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "framer-motion": "^1.11.1",
     "jquery": "^3.5.1",
+    "morgan": "^1.10.0",
     "node-sass": "^4.14.1",
+    "nodemailer": "^6.6.2",
     "pdf-viewer-reactjs": "^2.1.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.17",
@@ -54,5 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:4444/"
+  "proxy": "https://roberteallen:9000/"
 }
