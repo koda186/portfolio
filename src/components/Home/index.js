@@ -10,7 +10,6 @@ import FTyping from "./FormTypewriter";
 import homeLogo from "../../images/HomePageJourney.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
-import { useViewportScroll } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import AnimateComponent from "./AnimateOnScroll";
 
@@ -95,7 +94,7 @@ export default class Home extends React.Component {
         <motion.div className="homeProject"
         onHoverStart={() => console.log("Hover ends ")}
         onHoverStart={() => this.setState({isToggled: true})}
-        onHoverEnd={() => this.setState({isToggled: false})}
+        onHoverEnd={() => this.setState({isToggled: true})}
         >
         <AnimatePresence>
           {this.state.scrollTop === 0 && (
