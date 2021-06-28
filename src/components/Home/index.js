@@ -14,8 +14,6 @@ import { useViewportScroll } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import AnimateComponent from "./AnimateOnScroll";
 
-
-
 export default class Home extends React.Component {
   constructor(props) {
       super(props)
