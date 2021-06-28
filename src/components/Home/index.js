@@ -15,48 +15,25 @@ import AnimateComponent from "./AnimateOnScroll";
 
 export default class Home extends React.Component {
   constructor(props) {
-      super(props)
-      this.myRef = React.createRef()
+      super(props);
       this.state = {
-        scrollTop: 0,
-        isToggled: true,
-        visible: false,
-        scrolling: false,
-        transform: 0,
-        handleScroll: this.handleScroll.bind(this)
+        isToggled: true
       };
     }
-
-    componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll);
-    }
-    componentDidUpdate() {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-
-    handleScroll = () => {
-      const scrollY = window.scrollY
-      const scrollTop = this.myRef.current.scrollTop
-      console.log(`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scrollTop}`)
-      this.setState({scrollTop: scrollTop});
-
-      if (window.scrollY === 0 && this.state.scrolling === true) {
-        this.setState({scrolling: false});
-        console.log(this.state.scrolling)
-      }
-      else if (window.scrollY !== 0 && this.state.scrolling !== true) {
-        this.setState({scrolling: true});
-      }
-      console.log(this.state.scrolling)
-
-    }
-
   render() {
-    const {scrollTop} = this.state
+      const { isToggled } = this.props;
+      function onPanStart(event, info) {
+        console.log(info.point.x, info.point.y)
+        this.state.isToggled = true
+      }
+
+      function onPanEnd(event, info) {
+        console.log(info.point.x, info.point.y)
+        this.state.isToggled = false
+      }
     return (
       <>
-      <section id="section1"ref={this.myRef}
-        onScroll={this.onScroll}>
+      <section id="section1">
             <Particle />
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
@@ -97,7 +74,7 @@ export default class Home extends React.Component {
         onHoverEnd={() => this.setState({isToggled: true})}
         >
         <AnimatePresence>
-          {this.state.scrollTop === 0 && (
+          {this.state.isToggled === true && (
             <AnimateComponent>
               <Projects />
             </AnimateComponent>
