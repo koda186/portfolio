@@ -1,0 +1,19 @@
+.education-container {
+ /*background-color: rgb(88, 91, 248);*/
+ background-color: white;
+ border-radius: 15px;
+  /*background-color: white;*/
+  position: relative;
+  overflow-y: auto;
+  z-index: 3; /*9999;*/
+}
+
+
+td {
+  vertical-align: top;
+  padding: 8px;
+}
+
+td.edu-field {
+  text-align: right;
+}

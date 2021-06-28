@@ -1,0 +1,9 @@
+.image-container{
+  border-radius: 15px;
+  /*background-color: white;*/
+  padding: 5%;
+  margin: 3%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 1; /*9999;*/
+}
