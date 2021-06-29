@@ -4,6 +4,7 @@ const app = express();
 require('dotenv').config();
 const morgan = require('morgan');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 // create variable to set to port number using 9000...looking for environment variables called PORT if not avalible run on 9000
 const PORT = process.env.PORT || 9000;
