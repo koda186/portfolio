@@ -7,8 +7,8 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 
 // create variable to set to port number using 9000...looking for environment variables called PORT if not avalible run on 9000
-const PORT = process.env.PORT || 9000;
-var cors = require('cors')
+const PORT = process.env.PORT || 4444;
+var cors = require('cors');
 
 //use routes
 app.use(morgan('dev'));
@@ -19,7 +19,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 
-app.use(cors())
+app.use(cors());
 
 //use build folder of react app
 app.use(express.static(path.join(__dirname, 'build')));

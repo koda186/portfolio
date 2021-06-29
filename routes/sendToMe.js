@@ -10,6 +10,7 @@ const transport = {
   //configuration for making a site send an email.
   host: 'smtp.gmail.com',
   port: 587,
+  type: "oauth2",
   secure: false,
   auth: {
     user: process.env.THE_EMAIL,

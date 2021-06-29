@@ -60,5 +60,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://roberteallen:9000/"
+  "proxy": "http://localhost:4444/"
 }
