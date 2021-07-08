@@ -18,14 +18,15 @@ class ContactForm extends React.Component {
     console.log(this.state);
     axios({
       method: "POST",
-      url:"http://localhost:4444/sendtome",
+      url:"/sendtome",
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
         alert("Message Sent.");
         this.resetForm()
-      } else if (response.data.status === 'fail') {
-        alert("Message failed to send.")
+      }
+      else if (response.data.status === 'fail') {
+        alert("Message failed to send.");
       }
   })
 }

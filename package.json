@@ -60,5 +60,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:4444/"
+  "proxy": "https://142.93.62.201:4444"
 }

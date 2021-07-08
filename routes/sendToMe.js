@@ -10,7 +10,7 @@ const transport = {
   //configuration for making a site send an email.
   host: 'smtp.gmail.com',
   port: 587,
-  type: "oauth2",
+  domain:'gmail.com',
   secure: false,
   auth: {
     user: process.env.THE_EMAIL,
@@ -29,8 +29,9 @@ const transporter = nodemailer.createTransport(transport);
     }
   });
 
-  sendToMeRouter.post('/', (req,res, next) => {
+ sendToMeRouter.post('/', (req,res, next) => {
     //making mailable object
+    //console.log(req.body)
     var name = req.body.name
     var email = req.body.email
     var message = req.body.message
@@ -43,44 +44,34 @@ const transporter = nodemailer.createTransport(transport);
       to: process.env.THE_EMAIL,  // receiving email address
       subject: 'New Message from your Website!',
       text: content
-    /*
-      const mail = {
-      from: process.env.THE_EMAIL,
-      to: process.env.THE_EMAIL,
-      subject: req.body.subject,
-      text: `
-      from:
-      ${req.body.name}
-
-      contact: ${req.body.email}
-
-      message:
-
-      ${req.body.message}`
-      */
     }
 
+    //// error handling
     transporter.sendMail(mail, (err,data) => {
-          if(err) {
-            res.json({
-              status: 'fail'
-            })
-          } else {
-            res.json({
-              status: 'success'
-            })
-            transporter.sendMail({
-              from: "<your email address>",
-              to: email,
-              subject: "Submission was successful!",
-              text: `Hi there ${name}! Thanks for reaching out. I wanted to let you know I received your message and will be in touch within 48 hours. Have a great day.\n\nForm Details:\nName: ${name}\n Email: ${email}\n Message: ${message}`
-            }), function(error, info){
-              if(error) {
-                console.log(error);
-              } else{
-                console.log('Message sent: ' + info.response);
-              }
-            };
+        if(err)
+        {
+          res.json({
+            status: 'fail'
+          })
+        }
+        else
+        {
+          res.json({
+            status: 'success'
+          })
+          transporter.sendMail({
+            from: "<your email address>",
+            to: email,
+            subject: "Submission was successful!",
+            text: `Hi there ${name}! Thanks for reaching out. I wanted to let you know I received your message and will be in touch within 48 hours. Have a great day.\n\nYour Message Details:\nName: ${name}\n Email: ${email}\n Message: ${message}`
+          }), function(error, info){
+            if(error) {
+              console.log(error);
+            }
+            else {
+              console.log('Message sent: ' + info.response);
+            }
+          };
         }
       });
     });
