@@ -13,7 +13,7 @@ class MyNav extends React.Component {
     return (
 
       <Navbar fixed="top" expand="lg">
-      <Navbar.Brand as={Link} className= "section" to="/">Robert Allen</Navbar.Brand>
+      <Navbar.Brand as={Link} className= "section" to="/">~/RobertAllen</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -46,7 +46,8 @@ class MyNav extends React.Component {
           <Introduction />
           <a href="https://linkedin.com/in/robert-allen-jr-11183382" target="_blank" className="fa fa-linkedin fa-2x" rel="noopener noreferrer" />
           <a href="https://bitbucket.org/rallen186NMR/workspace/projects/" target="_blank" className="fa fa-bitbucket fa-2x" rel="noopener noreferrer" />
-          <a href="mailto:rallen6@stedwards.edu" target="_blank" className="fa fa-envelope fa-2x" rel="noopener noreferrer" />
+          <a href="https://github.com/koda186/portfolio" target="_blank" className="fa fa-github fa-2x" rel="noopener noreferrer" />
+          {/*<a href="mailto:rallen6@stedwards.edu" target="_blank" className="fa fa-envelope fa-2x" rel="noopener noreferrer" />*/}
 
         </Navbar.Collapse>
       </Navbar >

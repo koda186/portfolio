@@ -24,7 +24,7 @@ function Projects(props) {
         <Row>
           <Col xs={12} md={6}>
             <Thumbnail
-            link = "/"
+            link = "/raspberryPi"
             image= {raspberryPi} alt= "100x100 "
             />
           </Col>
