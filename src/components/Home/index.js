@@ -14,27 +14,28 @@ import { AnimatePresence } from "framer-motion";
 import AnimateComponent from "./AnimateOnScroll";
 
 export default class Home extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
       super(props);
       this.state = {
-        isToggled: true
+        isToggled: false
       };
-    }
+    }*/
   render() {
-      const { isToggled } = this.props;
+      /*const { isToggled } = this.props;
       function onPanStart(event, info) {
         console.log(info.point.x, info.point.y)
         this.state.isToggled = true
-      }
-
+      }*/
+      /*
       function onPanEnd(event, info) {
         console.log(info.point.x, info.point.y)
         this.state.isToggled = false
-      }
+      }*/
     return (
       <>
+      <Particle />
       <section id="section1">
-            <Particle />
+
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
             <Row>
@@ -69,17 +70,18 @@ export default class Home extends React.Component {
 
       <section id="section2">
         <motion.div className="homeProject"
-        onHoverStart={() => console.log("Hover ends ")}
-        onHoverStart={() => this.setState({isToggled: true})}
-        onHoverEnd={() => this.setState({isToggled: true})}
+        /*onHoverStart={() => console.log("Hover ends ")}*/
+        /*onHoverStart={() => this.setState({isToggled: true})}*/
+        /*onHoverEnd={() => this.setState({isToggled: false})}*/
         >
-        <AnimatePresence>
-          {this.state.isToggled === true && (
+        {/*<AnimatePresence>
+        {this.state.isToggled === true && (*/}
             <AnimateComponent>
               <Projects />
             </AnimateComponent>
-          )}
-        </AnimatePresence>
+          {/*)}
+        </AnimatePresence>*/}
+
         </motion.div>
       </section>
 
@@ -94,7 +96,7 @@ export default class Home extends React.Component {
 
 
       <section id="section4">
-            <Particle />
+            
         <Container fluid className="home-section" id="home">
           <Container className="form-content">
             <Row>
