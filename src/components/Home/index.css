@@ -22,11 +22,10 @@
 
 .homeEdu{
   /*background-color: #F8E981;*/
-  background-image: linear-gradient( 135deg, #EAC79C 10%, #EAC79C 100%);
-  background-attachment: fixed;
+  background-color: #EAC79C;
   position: relative;
   overflow-y: auto;
-  z-index: 3; /*9999;*/
+  z-index: 7; /*9999;*/
   text-align: center;
   padding-top: 18px !important;
   margin-top: 8% !important;
