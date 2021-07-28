@@ -26,13 +26,13 @@ class MyNav extends React.Component {
             <Nav.Link as={Link} to="/education">~/Education</Nav.Link>
             <Nav.Link as={Link} to="/about">~/About</Nav.Link>
             */}
-            <Link2 activeClass="active" className= "section" to="section2" spy={true} smooth={true} offset={0} duration={800}>
+            <Link2 activeClass="active" className= "section" to="section2" spy={true} smooth={true} offset={0} duration={100}>
               ~/Projects
             </Link2>
-            <Link2 activeClass="active" className= "section" to="section3" spy={true} smooth={true} offset={-80} duration={800}>
+            <Link2 activeClass="active" className= "section" to="section3" spy={true} smooth={true} offset={-200} duration={800}>
               ~/Education
             </Link2>
-            <Link2 activeClass="active" className= "section" to="section4" spy={true} smooth={true} offset={-40} duration={800}>
+            <Link2 activeClass="active" className= "section" to="section4" spy={true} smooth={true} offset={300} duration={800}>
               ~/Contact
             </Link2>
             {/*
