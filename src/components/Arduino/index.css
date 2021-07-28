@@ -8,11 +8,24 @@
   z-index: 1; /*9999;*/
 }
 
+/*project index*/
+.flex-container{
+  border-radius: 15px;
+  padding: 1%;
+  margin-top: 12%;
+  margin-right: 12%;
+  position: relative;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+/*
 .flex-container{
   border-radius: 15px;
   padding: 15%;
   margin: 6%;
   position: relative;
   overflow-y: auto;
-  z-index: 3; /*9999;*/
+  z-index: 3;
 }
+*/
