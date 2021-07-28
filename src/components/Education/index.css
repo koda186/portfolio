@@ -6,7 +6,7 @@
   position: relative;
   overflow-y: auto;
   z-index: 3; /*9999;*/
-
+  transform: translateY(0%);
 }
 
 .mobile-education{
