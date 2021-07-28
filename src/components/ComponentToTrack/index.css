@@ -1,0 +1,15 @@
+.example {
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+  border-radius: 25px;
+
+  position: relative;
+  overflow-y: auto;
+  z-index: 1; /*9999;*/
+}
+
+.example:hover {
+  background-color: #A8D0E6;
+}
