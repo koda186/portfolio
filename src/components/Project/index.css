@@ -6,20 +6,10 @@
   padding-bottom: 5%;
   margin: 5%;
   position: relative;
-  overflow-y: auto;
+  overflow-x: auto;
   z-index: 1; /*9999;*/
 
 }
-
-
-.container-fluid{
-  border-radius: 15px;
-  position: relative;
-  overflow-y: auto;
-  z-index: 3; /*9999;*/
-  cursor: pointer;
-}
-
 
 .image-inner-container {
   width: 100%;
@@ -27,21 +17,54 @@
   max-width: 250px;
 }
 
-/*
+/*project index*/
 .flex-container{
   border-radius: 15px;
-  padding: 2%;
+  padding: 0%;
+  margin-left: 12%;
+  margin-right: 12%;
   position: relative;
-  overflow-y: auto;
-  z-index: 3;
+  overflow-y: hidden;
+  overflow-x: auto;
+  z-index: 2;
 }
-*/
 
-.flex-container{
-  border-radius: 15px;
-  padding: 2%;
-  margin: 12%;
+/*Project Image Prop - wobble thumbail*/
+.image {
+  display: block;
+  margin: 0 auto;
+    /*width: calc(50% - 100px);*/
+  width: calc(100%);
+  fill-opacity: initial;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  /*background-color: rgb(88, 91, 248);*/
+
+  border-radius: 25px;
+  /*float: center;*/
   position: relative;
-  overflow-y: none;
-  z-index: 1;
+  overflow-y: hidden;
+  z-index: 9; /*9999;*/
+  overflow-x: auto;
+
+}
+
+.image:focus, .image:hover {
+  animation: wobble 1s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
