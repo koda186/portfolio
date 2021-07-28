@@ -1,0 +1,29 @@
+
+
+.my-modal{
+  width: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  padding-left: 50%;
+  justify: center;
+}
+
+.pdf-main{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.pagec{
+  text-align: center;
+
+}
+
+.buttonc{
+  justify-content: center;
+}
