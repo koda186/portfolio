@@ -39,7 +39,8 @@ body {
   background: rgb(36,58,94);
   background: linear-gradient(90deg, rgba(36,58,94,1) 0%, rgba(168,208,230,1) 100%);
   /*background: rgb(36,48,94);
-  background: linear-gradient(90deg, rgba(36,48,94,1) 0%, rgba(168,208,230,1) 100%);*/
+  background: linear-gradient(90deg, rgba(36,48,94,1) 0%, rgba(168,208,230,1) 100%);
+    background-image: linear-gradient(to bottom, #7DE2FC 0%, #ffecd2 100%);*/
   /*background: rgb(36,48,94);
   background: linear-gradient(90deg, rgba(36,48,94,1) 27%, rgba(168,208,230,1) 100%);*/
   /*background-image: linear-gradient( 90deg, #24305E 10%, #A8D0E6 100%);
@@ -82,7 +83,7 @@ body {
 }
 
 #aside {
-border-radius:  25px;
+border-radius:  0px;
 padding-bottom: 5%;
 background-color: rgb(88, 91, 248);
 }
@@ -190,16 +191,6 @@ background-color: rgb(88, 91, 248);
   padding: 1px;
 }
 
-
-.flex-container{
-  border-radius: 15px;
-  padding: 1%;
-  margin: 12%;
-  position: relative;
-  overflow-y: auto;
-  z-index: 3;
-}
-
 .center-body{
   border-radius: 25px;
   /*background-color: white;*/
@@ -210,42 +201,6 @@ background-color: rgb(88, 91, 248);
   z-index: 3; /*9999;*/
 }
 
-/*Project Image Prop - wobble*/
-.image {
-  display: block;
-  margin: 0 auto;
-    /*width: calc(50% - 100px);*/
-  width: calc(100%);
-  fill-opacity: initial;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  /*background-color: rgb(88, 91, 248);*/
-
-  border-radius: 25px;
-  /*float: center;*/
-  position: relative;
-  overflow-y: auto;
-  z-index: 9999; /*9999;*/
-}
-.image:focus, .image:hover {
-  animation: wobble 1s 1;
-}
-
-@keyframes wobble {
-  25% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  75% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 .mainmedia {
   /*background-color: whitesmoke;*/
@@ -260,7 +215,6 @@ background-color: rgb(88, 91, 248);
 ul {
   overflow: auto;
   position: left;
-
 }
 
 ul li {
