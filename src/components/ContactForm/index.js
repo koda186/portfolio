@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios';
+import "./index.css";
 
 
 class ContactForm extends React.Component {
@@ -39,15 +40,15 @@ resetForm(){
     return(
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
-            <label htmlFor="name"><h5><b>Name</b></h5></label>
+            <label htmlFor="name"><h4><b>Name</b></h4></label>
             <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1"><h5><b>Email address</b></h5></label>
+            <label htmlFor="exampleInputEmail1"><h4><b>Email address</b></h4></label>
             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
           <div className="form-group">
-            <label htmlFor="message"><h5><b>Message</b></h5></label>
+            <label htmlFor="message"><h4><b>Message</b></h4></label>
             <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
           <div className="col text-center">
