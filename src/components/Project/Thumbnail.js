@@ -3,6 +3,7 @@ import React from 'react';
 //Import the Link Component
 import {Link} from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
+import "./index.css";
 
 //thumbnail component
 //****link each slot with its corresponding attributes,

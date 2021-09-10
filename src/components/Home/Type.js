@@ -7,11 +7,9 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Click A Project Image Below:",
-          "Software Engineer:",
-          "MEAN Stack Developer",
-          "LAMP Stack Developer",
-          "MERN Stack Developer",
+          "Software Engineer",
+          "LAMP Stack Dev",
+          "MERN Stack Dev",
         ],
         autoStart: true,
         loop: true,

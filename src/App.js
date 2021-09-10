@@ -11,6 +11,7 @@ import Education from './components/Education'
 import About from "./components/About";
 import Arduino from "./components/Arduino";
 import RaspPI from "./components/RaspPI";
+import SystemDiagram from "./components/SystemDiagram";
 import ScrollToTop from "./components/ScrollToTop"
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path = "/about" component = {About} />
         <Route path = "/raspberryPi" component = {RaspPI} />
         <Route path = "/arduino" component = {Arduino} />
+        <Route path = "/SystemDiagram" component = {SystemDiagram} />
 
         </Switch>
       </div>
