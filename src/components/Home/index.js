@@ -6,7 +6,6 @@ import "./index.css";
 import Particle from "../Particles";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
-import FTyping from "./FormTypewriter";
 import homeLogo from "../../images/HomePageJourney.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
@@ -47,8 +46,8 @@ export default class Home extends React.Component {
                     <a href="https://github.com/koda186/portfolio" target="_blank" className="fa fa-github fa-3x" rel="noopener noreferrer" />
                   </div>
 
-                  <div class="downArrow_bounce">
-                  <div class="downArrow bounce">
+                  <div className="downArrow_bounce">
+                  <div className="downArrow bounce">
                     <img width="50" height="50" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
                   </div>
                   </div>
@@ -57,7 +56,7 @@ export default class Home extends React.Component {
               </Row>
             </Container>
           </Container>
-        ,.7);
+        ,.5);
 
         const Section3 = ParallaxJSXWrapper(
         <div className="section3_EDU" >
@@ -76,10 +75,10 @@ export default class Home extends React.Component {
                 <path d="M0,0 C65,20 90,5 100,0" />
             </svg>
         </div>
-        ,.3);
+        ,0.5);
 
         const Section4 = ParallaxJSXWrapper(
-          <Container fluid className="home-contact" id="home">
+          <Container fluid className="form-container" id="home">
             <Container className="form-content">
               <Row>
                 <Col md={12} className="form-name">
@@ -109,7 +108,7 @@ export default class Home extends React.Component {
 
             </Container>
           </Container>
-        ,.99);
+        ,.5);
 
 
     return (
@@ -122,7 +121,7 @@ export default class Home extends React.Component {
 
       <section id="section2">
         <div style={{ paddingTop: 50, paddingBottom: 30, width: 100 }}>
-          <div class="typewriter_wrap">
+          <div className="typewriter_wrap">
             <Type />
           </div>
         </div>
