@@ -1,14 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import ReactDOM from 'react-dom';
 import Modal from 'react-bootstrap/Modal';
-import ModalDialog from 'react-bootstrap/ModalDialog';
 import "./index.css";
 import Pdf from './Pdf';
-
 
 function ModalBody() {
   const values = 'xxl-down';
