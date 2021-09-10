@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactCursorPosition from 'react-cursor-position';
-import Projects from "../Project";
 import "./index.css";
 
 const PositionLabel = (props) => {
