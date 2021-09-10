@@ -14,24 +14,15 @@ import RaspPI from "./components/RaspPI";
 import SystemDiagram from "./components/SystemDiagram";
 import ScrollToTop from "./components/ScrollToTop"
 
-
-//import Resume from "./components/Resume"
-//import resumeRobertAllen from "./components/Resume/pdf/resumeRobertAllen.pdf";
-//import logo from './logo.svg';
-//import linkedIn from './images/linkedIn.png'
-//import Nav from './components/Nav.js';
-
-
-
-
-//import ReactDOM from 'react-dom';
-
-
 // The react-router-dom library provides a component called
 // BrowserRouter, which synchronizes with the browser and
 // allows a second component, Route, to control which component
 // should appear for which URL.
+
 // A third component: Link, allows for transitions between routes.
+
+// A <Switch> looks through its children <Route>s and
+// renders the first one that matches the current URL. */}
 function App() {
   return (
     <Router>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 export default function AnimateOnScroll({ children }) {
