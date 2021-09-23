@@ -1,3 +1,15 @@
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */{
+
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+
+}
+
 .image-container{
   border-radius: 15px;
   padding-left: 3%;
@@ -17,6 +29,44 @@
   max-width: 250px;
 }
 
+#projectImg{
+  height: 400px;
+  width: 400px;
+  border-radius: 40px !important;
+  padding-bottom: 2%;
+}
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */{
+  #projectImg{
+    height: 200px;
+    width: 200px;
+    border-radius: 35px !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  #projectImg{
+    height: 225px;
+    width: 350px;
+    border-radius: 35px !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  #projectImg{
+    height: 400px;
+    width: 500px;
+    border-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+  }
+}
+@media (min-width: 100px) and (max-width: 570px){
+  #projectImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 35px !important;
+  }
+}
+
 /*project index*/
 .flex-container{
   border-radius: 15px;
@@ -28,26 +78,50 @@
   overflow-x: auto;
   z-index: 2;
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .flex-container{
+    border-radius: 15px;
+    padding: 0%;
+    margin-left: 14%;
+    margin-right: 14%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .flex-container{
+    border-radius: 15px;
+    padding: 0%;
+    margin-left: 14%;
+    margin-right: 14%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 2;
+  }
+}
+
 
 /*Project Image Prop - wobble thumbail*/
 .image {
   display: block;
   margin: 0 auto;
-    /*width: calc(50% - 100px);*/
+  /*width: calc(50% - 100px);*/
   width: calc(100%);
   fill-opacity: initial;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   /*background-color: rgb(88, 91, 248);*/
-
   border-radius: 25px;
-  /*float: center;*/
   position: relative;
   overflow-y: hidden;
   z-index: 9; /*9999;*/
   overflow-x: auto;
-
 }
 
 .image:focus, .image:hover {

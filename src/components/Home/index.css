@@ -12,7 +12,34 @@
   margin-bottom: 2% !important;
   transform: translateY(-4%);
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
+  .homeProject {
+    position: relative;
+    overflow-y: auto;
+    z-index: 1; /*9999;*/
+    text-align: center;
+    padding-top: 0% !important;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+    transform: translateY(0%);
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .homeProject {
+    position: relative;
+    overflow-y: auto;
+    z-index: 1; /*9999;*/
+    text-align: center;
+    padding-top: 0% !important;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+    transform: translateY(0%);
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
   .homeProject {
     position: relative;
     overflow-y: auto;
@@ -34,6 +61,43 @@
   justify-content: center;
   padding-top: 2% !important;
 }
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
+  .section3_header {
+    font-size: 1.5em !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2% !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .section3_header {
+    font-size: 2.5em !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2% !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .section3_header {
+    font-size: 2.5em !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2% !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .section3_header {
+    font-size: 3.5em !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2% !important;
+  }
+}
+
 
 .section3_EDU{
   width: 100vw;
@@ -45,7 +109,35 @@
   transform: translateY(-15%);
   margin-bottom: 2%;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+{
+  .section3_EDU {
+    width: 100vw;
+    /*height: 550px; */
+    position: fixed;
+    /* top: calc(550px * 1); */
+    z-index: 2;
+    background-color: #EAC79C;
+    transform: translateY(0%);
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .section3_EDU {
+    width: 100vw;
+    /*height: 550px; */
+    position: fixed;
+    /* top: calc(550px * 1); */
+    z-index: 2;
+    background-color: #EAC79C;
+    transform: translateY(0%);
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
   .section3_EDU {
     width: 100vw;
     /*height: 550px; */
@@ -152,12 +244,38 @@
   background-color: #A8D0E6;
   margin-bottom: 0% !important;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .home-section {
     position: fixed;
     z-index: 88;
     height: 100%;
     padding-top: 63%;
+    margin-top: 0%;
+    background-color: #A8D0E6;
+    margin-bottom: 0% !important;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .home-section {
+    position: fixed;
+    z-index: 88;
+    height: 100%;
+    padding-top: 19%;
+    margin-top: 0%;
+    background-color: #A8D0E6;
+    margin-bottom: 0% !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .home-section {
+    position: fixed;
+    z-index: 88;
+    height: 100%;
+    padding-top: 19%;
     margin-top: 0%;
     background-color: #A8D0E6;
     margin-bottom: 0% !important;
@@ -193,7 +311,8 @@
   z-index: 3; /*9999;*/
   cursor: pointer;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .container-fluid{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -207,36 +326,107 @@
     cursor: pointer;
   }
 }
-
-
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .container-fluid{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 16%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 3; /*9999;*/
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .container-fluid{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 16%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 3; /*9999;*/
+    cursor: pointer;
+  }
+}
 
 .tent {
   color: black;
   text-align: 4%;
-
 }
 
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .heading {
     font-size: 2.0em !important;
-}}
+}
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .heading {
+    font-size: 3.5em !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .heading {
+    font-size: 4.0em !important;
+  }
+}
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .heading-name {
     font-size: 2.0em !important;
-}}
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .heading-name {
+    font-size: 3.5em !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .heading-name {
+    font-size: 4.0em !important;
+  }
+}
 
 .main-name {
   color: #3b5998;
   /*box-shadow: 10px 10px 10px 0px black;*/
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .section_name {
+    color: #3b5998 !important;
+    font-size: 1.5em !important;
+    /*box-shadow: 10px 10px 10px 0px black;*/
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .section_name {
+    color: #3b5998 !important;
+    font-size: 1.5em !important;
+    /*box-shadow: 10px 10px 10px 0px black;*/
+  }
 }
 
 /* ------------ */
@@ -247,17 +437,52 @@
   text-align: center;
   padding-bottom: 10px !important;
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .form-name {
+      font-size: 1.8em !important;
+    }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .form-name {
+      font-size: 2.0em !important;
+    }
+}
+
 
 .form-container{
   position: relative;
   z-index: 99;
   background-color: #A8D0E6;
   transform: translateY(100%);
-
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .form-container {
     position: relative;
+    z-index: 99;
+    background-color: #A8D0E6;
+    transform: translateY(160%);
+    padding-bottom: 45%;
+    padding-top: 20%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .form-container {
+    position: relative;
+    padding-top:2%;
+    z-index: 99;
+    background-color: #A8D0E6;
+    transform: translateY(180%);
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .form-container {
+    position: relative;
+    padding-top:2%;
     z-index: 99;
     background-color: #A8D0E6;
     transform: translateY(180%);
@@ -289,33 +514,8 @@
   text-align: center;
 }
 
-.typewriter_wrap{
-  text-align: center;
-  padding-left: 40%;
-  position: absolute !important;
-  z-index: 1;
-  padding-bottom: 50%;
-  transform: translateY(-40%);
-
-}
-@media (max-width: 767px) {
-  .typewriter_wrap {
-    text-align: left;
-    position: absolute !important;
-    padding-bottom: 90%;
-    padding-left: 20%;
-    width: 100vw;
-    z-index: 1;
-    transform: translateY(-90%);
-  }
-}
-
-.Typewriter__cursor {
-  font-size: 2.0em !important;
-  color: #3b5998 !important;
-}
-
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .Typewriter__wrapper {
     font-size: 2.0em !important;
     font-weight: 500 !important;
@@ -326,15 +526,121 @@
     display: none !important;
   }
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .Typewriter__wrapper {
+    font-size: 3.5em !important;
+    color: #F4976C !important;
+    font-weight: 600 !important;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .Typewriter__wrapper {
+    font-size: 3.5em !important;
+    color: #F4976C !important;
+    font-weight: 600 !important;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+}
+
+
+.typewriter_wrap{
+  text-align: center;
+  padding-left: 40%;
+  position: absolute !important;
+  z-index: 1;
+  padding-bottom: 50%;
+  transform: translateY(-40%);
+
+}
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
+  .typewriter_wrap {
+    text-align: left;
+    position: absolute !important;
+    padding-bottom: 90%;
+    padding-left: 20%;
+    width: 100vw;
+    z-index: 1;
+    transform: translateY(-90%);
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .typewriter_wrap {
+    text-align: left;
+    position: absolute !important;
+    padding-bottom: 0%;
+    padding-left: 30%;
+    width: 100vw;
+    z-index: 1;
+    transform: translateY(-150%);
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .typewriter_wrap {
+    text-align: left;
+    position: absolute !important;
+    padding-bottom: 0%;
+    padding-left: 38%;
+    width: 100vw;
+    z-index: 1;
+    transform: translateY(-150%);
+  }
+}
+
+
+
+.Typewriter__cursor {
+  font-size: 2.0em !important;
+  color: #3b5998 !important;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .Typewriter__cursor {
+    font-size: 3.0em !important;
+    color: #3b5998 !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .Typewriter__cursor {
+    font-size: 3.0em !important;
+    color: #3b5998 !important;
+  }
+}
+
 
 /*Arrow*/
 .downArrow_bounce{
   padding-top: 218px;
   text-align: center;
 }
-@media (max-width: 767px) {
+
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
   .downArrow_bounce{
     padding-top: 220px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .downArrow_bounce{
+    padding-top: 380px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .downArrow_bounce{
+    padding-top: 380px;
     text-align: center;
   }
 }
@@ -343,6 +649,7 @@
 	position: relative;
 	bottom: 45%;
 }
+
 .bounce {
 	-moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
@@ -354,8 +661,8 @@
     transform: translateY(0);
   }
   40% {
-    -moz-transform: translateY(-110px);
-    transform: translateY(-110px);
+    -moz-transform: translateY(-250px);
+    transform: translateY(-250px);
   }
   60% {
     -moz-transform: translateY(-15px);
@@ -368,8 +675,8 @@
     transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-110px);
-    transform: translateY(-110px);
+    -webkit-transform: translateY(-250px);
+    transform: translateY(-250px);
   }
   60% {
     -webkit-transform: translateY(-15px);
@@ -384,10 +691,10 @@
     transform: translateY(0);
   }
   40% {
-    -moz-transform: translateY(-110px);
-    -ms-transform: translateY(-110px);
-    -webkit-transform: translateY(-110px);
-    transform: translateY(-110px);
+    -moz-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
+    -webkit-transform: translateY(-250px);
+    transform: translateY(-250px);
   }
   60% {
     -moz-transform: translateY(-15px);
