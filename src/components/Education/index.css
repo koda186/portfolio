@@ -8,6 +8,52 @@
   z-index: 3; /*9999;*/
   transform: translateY(0%);
 }
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */{
+  .education{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    position: relative;
+    overflow-y: auto;
+    z-index: 3; /*9999;*/
+    transform: translateY(0%);
+    font-size: 12px !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .education{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    position: relative;
+    overflow-y: auto;
+    z-index: 3; /*9999;*/
+    transform: translateY(0%);
+    font-size: 16px !important;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+{
+  .education{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    position: relative;
+    overflow-y: auto;
+    z-index: 3; /*9999;*/
+    transform: translateY(0%);
+    font-size: 22px !important;
+  }
+}
 
 .mobile-education{
   border-radius: 15px;
@@ -19,14 +65,35 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.subject-name {
-  padding-top: 5%;
+.subject-name h3 {
+  padding-top: 0%;
   color: #374785;
   font-family: 'Roboto', sans-serif;
 }
 
-.edu-field{
+.edu-field h3{
   color: #374785;
+}
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+{
+  .edu-field h3{
+    color: #374785;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+{
+  .edu-field h3{
+    color: #374785;
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 90.063em) /* min-width 1441px, xlarge screens */
+{
+  .edu-field h3{
+    color: #374785;
+    font-size: 40px;
+  }
 }
 
 td {
