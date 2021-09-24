@@ -1,15 +1,3 @@
-@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */{
-
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-{
-
-}
-@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
-{
-
-}
-
 .image-container{
   border-radius: 15px;
   padding-left: 3%;
@@ -30,16 +18,16 @@
 }
 
 #projectImg{
-  height: 400px;
-  width: 400px;
-  border-radius: 40px !important;
-  padding-bottom: 2%;
+    height: 255px;
+    width: 320px;
+    border-radius: 35px !important;
 }
 @media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */{
   #projectImg{
-    height: 200px;
-    width: 200px;
+    height: 225px;
+    width: 260px;
     border-radius: 35px !important;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -48,22 +36,45 @@
     height: 225px;
     width: 350px;
     border-radius: 35px !important;
+    padding: 5px;
   }
 }
-@media only screen and (min-width: 89.063em) /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 64.01em) and (max-width: 89em)/* min-width 1025px and max-width 1440px, use when QAing tablet-only issues */
 {
   #projectImg{
-    height: 400px;
-    width: 500px;
-    border-radius: 40px !important;
-    border-bottom-right-radius: 40px !important;
+    height: 255px;
+    width: 370px;
+    border-radius: 35px !important;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 89.063em) /* min-width 1440px, xlarge screens */
+{
+  #projectImg{
+    height: 295px;
+    width: 445px;
+    border-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 113.063em) /* min-width 1900px, xlarge screens */
+{
+  #projectImg{
+    height: 335px;
+    width: 565px;
+    border-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    padding: 5px;
   }
 }
 @media (min-width: 100px) and (max-width: 570px){
   #projectImg{
-    height: 100px;
-    width: 100px;
-    border-radius: 35px !important;
+    height: 225px;
+    width: 260px;
+    border-radius: 25px !important;
+    margin: 5px;
+    padding: 5px;
   }
 }
 
